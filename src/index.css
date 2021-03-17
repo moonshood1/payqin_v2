@@ -1,13 +1,419 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  width: 100%;
+  background: #f9f9f9;
+  transition: 0.6s;
+}
+
+.navbar .navbar_logo img,
+.footer .footer_logo img {
+  max-height: 25px;
+  max-width: 110px;
+  padding: 10px;
+}
+
+.navbar .navbar_links {
+  padding: 10px;
+  margin-left: auto;
+  transition: 0.6s;
+}
+
+.navbar .navbar_links a {
+  text-decoration: none;
+  color: #222222;
+  margin-inline: 10px;
+  font-weight: 500;
+}
+.navbar .navbar_links a:hover {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 25px 10px 45px 35px;
+  width: 100%;
+  display: flex;
+  background: #f9f9f9;
+  bottom: 0;
+  position: fixed;
+  border-top: 1px solid black;
+}
+
+.footer .footer_links {
+  margin-left: 2%;
+}
+
+.footer .footer_links a {
+  margin-inline: 10px;
+  text-decoration: none;
+  color: #888888;
+  font-weight: 400;
+}
+
+.footer .footer_links a:hover {
+  font-weight: 500;
+}
+
+.footer .footer_socials {
+  margin-left: 35%;
+}
+
+.footer .footer_socials a {
+  margin-inline: 5px;
+  text-decoration: none;
+  color: #4a90e2;
+}
+.footer .footer_socials a:hover {
+  color: #306198;
+}
+
+.footer .footer_contact {
+  margin-left: 1%;
+}
+
+.footer .footer_contact button.footer_contact_button {
+  border: 2px solid #4a90e2;
+  color: #4a90e2;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer .footer_website_reference {
+  display: block;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #888888;
+  font-size: 12px;
+}
+
+/* Content structure */
+
+.app_content,
+.global_container,
+.global_container_content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.global_container_content {
+  grid-template-rows: auto;
+}
+
+/* products page */
+.product_wrapper {
+  grid-row-start: auto;
+  width: 100%;
+  /*height: 600px;*/
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.product_wrapper.bg-dark {
+  background: transparent linear-gradient(90deg, #f9f9f9 0%, #cecece00 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.product_wrapper .product_wrapper_left {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding-top: 10%;
+  padding-left: 2%;
+}
+
+h1.wrapper_title {
+  font-size: 72px;
+}
+
+p.wrapper_text {
+  color: #888888;
+  font-size: 26px;
+  margin-top: 2%;
+}
+
+.product_wrapper_left .wrapper_buttons {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+.wrapper_buttons .wrapper_button_ios {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  width: 100%;
+}
+
+.wrapper_button_ios a img.ios {
+  margin-right: 10px;
+  max-width: 162px;
+}
+
+.wrapper_buttons .wrapper_button_google {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+}
+
+.wrapper_button_google a img.google {
+  width: 162px;
+}
+
+.product_wrapper .product_wrapper_right {
+  padding-left: 25%;
+}
+.product_wrapper .product_wrapper_right.pay {
+  padding-left: 10%;
+}
+
+.product_wrapper_right img {
+  max-height: 520px;
+}
+
+.crypto_doc_wrapper {
+  padding-top: 7%;
+  text-align: center;
+}
+
+.crypto_doc_wrapper .crypto_doc_first_section h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.crypto_doc_wrapper .crypto_doc_first_section p {
+  color: #888888;
+  font-size: 26px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.crypto_doc_first_section .button_container {
+  width: 336px;
+  height: 54px;
+  background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crypto_doc_first_section .button_container button.crypto_doc_link_create {
+  text-decoration: none;
+  color: #222222;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  width: 336px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.crypto_doc_wrapper .crypto_doc_buttons {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 39%;
+}
+
+.crypto_doc_buttons .crypto_doc_buttons_ios img.ios {
+  margin-right: 5px;
+}
+.crypto_doc_buttons .crypto_doc_buttons_ios img.ios,
+.crypto_doc_buttons .crypto_doc_buttons_google img.google {
+  max-width: 162px;
+}
+
+.transfer_wrapper {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.transfer_wrapper_left {
+  height: 600px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.transfer_wrapper_left_first_section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.transfer_wrapper_left_first_section img {
+  grid-column-start: 2;
+  height: 100%;
+}
+.transfer_wrapper_left_second_section {
+  padding-left: 2%;
+}
+.transfer_wrapper_left_second_section h1,
+.transfer_wrapper_right_first_section h1 {
+  color: #222222;
+  font-size: 72px;
+}
+.transfer_wrapper_left_second_section p,
+.transfer_wrapper_right_first_section p {
+  color: #888888;
+  font-size: 26px;
+}
+.transfer_button {
+  margin-top: 2%;
+  width: 225px;
+  height: 54px;
+  background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 7px;
+}
+.transfer_button button.transfer_button_learn_more {
+  text-decoration: none;
+  color: #222222;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  width: 225px;
+  height: 50px;
+}
+.transfer_wrapper_right {
+  height: 600px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  padding-left: 10%;
+}
+.transfer_wrapper_right .transfer_wrapper_right_second_section img {
+  max-width: 450px;
+}
+
+/* Dev part */
+.wrapper_links {
+  margin-top: 2%;
+}
+.wrapper_links button.api_doc_button {
+  width: 340px;
+  height: 54px;
+  border: 2px solid #4a90e2;
+  border-radius: 7px;
+  opacity: 1;
+  background: #fff;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+/* Pricing part */
+.pricing_wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.pricing_content {
+  margin-top: 7%;
+  height: 400px;
+  background: #f9f9f9;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.pricing_content_left {
+  margin-top: 2%;
+  margin-left: 4%;
+}
+.pricing_content_left h1 {
+  color: #222222;
+  font-size: 50px;
+  margin-top: 2%;
+}
+.pricing_content_left p {
+  margin-top: 6%;
+  color: #888888;
+  font-size: 26px;
+}
+
+.pricing_button_get_now {
+  margin-top: 4%;
+  text-align: center;
+  width: 336px;
+  height: 54px;
+  background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 7px;
+}
+
+button.get_now_button {
+  text-decoration: none;
+  color: #222222;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  width: 336px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.pricing_content_right img {
+  padding-top: 6%;
+  padding-right: 6%;
+}
+
+.pricing_offer_content {
+  display: grid;
+  grid-template-columns: 49% auto 49%;
+  margin-top: 5%;
+}
+
+.offer_content_left,
+.offer_content_right {
+  background: #f9f9f9;
+  border-radius: 25px;
+  padding-top: 20%;
+  padding-left: 4%;
+  height: 400px;
+}
+
+.offer_content_left small,
+.offer_content_right small {
+  color: #888888;
+  font-weight: 700;
+}
+.offer_content_left h2,
+.offer_content_right h2 {
+  color: #000000;
+  font-size: 50px;
+}
+.offer_content_left ul,
+.offer_content_right ul {
+  color: #888888;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.offer_content_left .offer_button_container,
+.offer_content_right .offer_button_container {
+  margin-top: 4%;
+  text-align: center;
+  width: 300px;
+  height: 54px;
+  background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 7px;
+}
+.offer_button_container button.offer_button,
+.offer_button_container button.offer_button {
+  text-decoration: none;
+  color: #222222;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
 }
