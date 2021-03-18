@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Transfer = () => {
-  const [id, setId] = useState(2);
   return (
     <div className="transfer_wrapper">
       <div className="transfer_wrapper_left">

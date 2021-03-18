@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Offer = () => {
-  const [id, setId] = useState(1);
   return (
     <div className="pricing_wrapper">
       <div></div>

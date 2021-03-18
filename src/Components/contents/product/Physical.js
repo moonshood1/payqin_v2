@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Physical = () => {
-  const [id, setId] = useState(1);
   return (
     <div className="product_wrapper bg-dark">
       <div className="product_wrapper_left">

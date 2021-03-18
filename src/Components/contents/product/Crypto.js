@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Crypto = () => {
-  const [id, setId] = useState(3);
   return (
     <div className="product_wrapper bg-dark">
       <div className="product_wrapper_left">

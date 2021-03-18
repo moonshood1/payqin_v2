@@ -1,11 +1,8 @@
-import { useState } from "react";
-
 const Wordpress = () => {
-  const [id, setId] = useState(3);
   return (
     <div
       className="crypto_doc_wrapper"
-      style={{ background: "#F9F9F9", height: "600px" }}
+      style={{ background: "#F9F9F9", width: "100%", height: "600px" }}
     >
       <div className="crypto_doc_first_section">
         <h1>Wordpress Plugin</h1>

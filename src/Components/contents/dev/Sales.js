@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Sales = () => {
-  const [id, setId] = useState(1);
   return (
     <div className="product_wrapper">
       <div className="product_wrapper_left">

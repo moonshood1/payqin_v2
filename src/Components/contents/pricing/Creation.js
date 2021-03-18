@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Creation = () => {
-  const [id, setId] = useState(0);
   return (
     <div className="pricing_wrapper">
       <div></div>

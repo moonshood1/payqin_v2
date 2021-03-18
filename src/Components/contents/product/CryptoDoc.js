@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const CryptoDoc = () => {
-  const [id, setId] = useState(4);
   return (
     <div className="crypto_doc_wrapper">
       <div className="crypto_doc_first_section">
