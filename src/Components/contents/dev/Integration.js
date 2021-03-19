@@ -4,7 +4,7 @@ const Payment = () => {
       <div className="product_wrapper_left">
         <h1 className="wrapper_title">Integrate the PayQin Payment Method</h1>
         <p className="wrapper_text">
-          Integrate our Payment Method to reach out Million Users in Multiple
+          Integrate our Payment method to reach out Million Users in Multiple
           Countries
         </p>
         <div className="wrapper_links">
