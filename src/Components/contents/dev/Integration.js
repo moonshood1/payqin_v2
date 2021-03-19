@@ -16,6 +16,7 @@ const Payment = () => {
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978215/payqin/website/API-Illustration_kqv6dk.png"
           alt=" two talking about api"
           height="400"
+          className="img_resp"
         />
       </div>
     </div>

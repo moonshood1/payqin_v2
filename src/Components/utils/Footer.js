@@ -11,14 +11,20 @@ const Footer = () => {
         <div className="footer_links">
           <a href="/about">About</a>
           <a href="/help">Help</a>
-          <a href="/Insurance">Insurance</a>
-          <a href="/ambassadors">PayQin Ambassadors</a>
+          <a href="https://assurance.payqin.com">Insurance</a>
+          <a href="https://ambassadeur.payqin.com">PayQin Ambassadors</a>
           <a href="/legal">Legal Notice</a>
         </div>
         <div className="footer_socials">
-          <a href="/facebook">F</a>
-          <a href="/twitter">t</a>
-          <a href="/instagram">ig</a>
+          <a href="https://www.facebook.com/payqin/">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/payqinn?lang=fr">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/payqin/">
+            <i className="fab fa-instagram"></i>
+          </a>
           <div className="footer_contact">
             <button className="footer_contact_button">Contact us</button>
           </div>

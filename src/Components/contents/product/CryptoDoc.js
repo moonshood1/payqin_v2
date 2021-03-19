@@ -9,7 +9,7 @@ const CryptoDoc = () => {
         </div>
       </div>
       <div className="crypto_doc_buttons">
-        <div className="crypto_doc_buttons_ios">
+        <div className="crypto_doc_buttons_off">
           <a href="/appstore">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
@@ -17,8 +17,6 @@ const CryptoDoc = () => {
               className="ios"
             />
           </a>
-        </div>
-        <div className="crypto_doc_buttons_google">
           <a href="/playstore">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
@@ -27,6 +25,7 @@ const CryptoDoc = () => {
             />
           </a>
         </div>
+        {/* <div className="crypto_doc_buttons_google"></div> */}
       </div>
     </div>
   );

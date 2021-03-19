@@ -4,12 +4,15 @@ import HomeProduct from "./Components/utils/views/HomeProduct";
 import HomeDev from "./Components/utils/views/HomeDev";
 import HomePricing from "./Components/utils/views/HomePricing";
 import { HashRouter, Route, Switch } from "react-router-dom";
+import MobileNavbar from "./Components/contents/mobile_version/MobileNavbar";
+import MobileFooter from "./Components/contents/mobile_version/MobileFooter";
 
 function App() {
   return (
     <HashRouter>
       <div className="App">
         <Navbar />
+        <MobileNavbar />
         <div className="app_content">
           <Switch>
             <Route path="/developpers" component={HomeDev}></Route>

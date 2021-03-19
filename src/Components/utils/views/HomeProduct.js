@@ -6,38 +6,45 @@ import Crypto from "../../contents/product/Crypto";
 import CryptoDoc from "../../contents/product/CryptoDoc";
 import DataStructure from "../DataStructure";
 import ReactFullpage from "@fullpage/react-fullpage";
+import MobileProduct from "../../contents/mobile_version/MobileProduct";
 
 const HomeProduct = () => {
   return (
     <div className="global_container">
       <div className="global_container_content">
-        <ReactFullpage
-          scrollingSpeed={1500}
-          render={({ state, fullpageApi }) => {
-            return (
-              <ReactFullpage.Wrapper>
-                <div className="section">
-                  <NotABank />
-                </div>
-                <div className="section">
-                  <Physical />
-                </div>
-                <div className="section">
-                  <Transfer />
-                </div>
-                <div className="section">
-                  <Crypto />
-                </div>
-                <div className="section">
-                  <CryptoDoc />
-                </div>
-              </ReactFullpage.Wrapper>
-            );
-          }}
-        />
+        <div className="web_view">
+          <ReactFullpage
+            scrollingSpeed={1500}
+            navigation={true}
+            navigationPosition="right"
+            render={({ state, fullpageApi }) => {
+              return (
+                <ReactFullpage.Wrapper>
+                  <div className="section">
+                    <NotABank />
+                  </div>
+                  <div className="section">
+                    <Physical />
+                  </div>
+                  <div className="section">
+                    <Transfer />
+                  </div>
+                  <div className="section">
+                    <Crypto />
+                  </div>
+                  <div className="section">
+                    <CryptoDoc />
+                  </div>
+                </ReactFullpage.Wrapper>
+              );
+            }}
+          />
+        </div>
+        <div className="mobile_view">
+          <MobileProduct />
+        </div>
       </div>
     </div>
   );
 };
-// Ajouter un container dans le home qui va recevoir un element dont le state change a chaque fois qu'on clique ou scroll la page
 export default HomeProduct;

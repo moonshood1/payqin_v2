@@ -11,6 +11,10 @@
   grid-template-rows: 10% auto 10%;
 }
 
+.mobile_view {
+  display: none;
+}
+
 /* Barre de navigation */
 .navbar {
   display: flex;
@@ -18,6 +22,13 @@
   background: #f9f9f9;
   transition: 0.6s;
   z-index: 100000;
+}
+
+.mobile_navbar {
+  display: none;
+}
+.mobile_footer {
+  display: none;
 }
 
 .navbar .navbar_logo img,
@@ -155,7 +166,7 @@
   grid-column-start: 1;
   grid-column-end: 1;
   padding-top: 10%;
-  padding-left: 2%;
+  padding-left: 10%;
 }
 
 h1.wrapper_title {
@@ -246,14 +257,18 @@ p.wrapper_text {
 .crypto_doc_wrapper .crypto_doc_buttons {
   display: flex;
   margin-top: 2%;
-  margin-left: 39%;
+  /* margin-left: 39%; */
 }
 
-.crypto_doc_buttons .crypto_doc_buttons_ios img.ios {
+.crypto_doc_buttons .crypto_doc_buttons_off {
+  margin-right: auto;
+  margin-left: auto;
+}
+.crypto_doc_buttons .crypto_doc_buttons_off img.ios {
   margin-right: 5px;
 }
-.crypto_doc_buttons .crypto_doc_buttons_ios img.ios,
-.crypto_doc_buttons .crypto_doc_buttons_google img.google {
+.crypto_doc_buttons .crypto_doc_buttons_off img.ios,
+.crypto_doc_buttons .crypto_doc_buttons_off img.google {
   max-width: 162px;
 }
 
@@ -264,7 +279,7 @@ p.wrapper_text {
 }
 
 .transfer_wrapper_left {
-  height: 600px;
+  height: 550px;
   display: grid;
   grid-template-rows: 50% 50%;
 }
@@ -305,9 +320,10 @@ p.wrapper_text {
   font-size: 20px;
   width: 225px;
   height: 50px;
+  cursor: pointer;
 }
 .transfer_wrapper_right {
-  height: 600px;
+  height: 550px;
   display: grid;
   grid-template-rows: 50% 50%;
   padding-left: 10%;
@@ -446,4 +462,406 @@ button.get_now_button {
 
 .fp-tableCell {
   display: flex !important;
+}
+
+#fp-nav {
+  top: 30% !important;
+}
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+@media screen and (max-width: 640px) {
+  html,
+  body {
+    overflow: scroll !important;
+  }
+  .App {
+    display: block;
+  }
+  .app_content {
+    display: block;
+  }
+
+  .web_view {
+    display: none;
+  }
+
+  .mobile_view {
+    display: block !important;
+  }
+  .navbar,
+  .footer {
+    display: none;
+  }
+
+  #fp-nav ul,
+  .fp-slidesNav ul {
+    display: none;
+  }
+
+  .mobile_app_content {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Barre de navigation mobile */
+  .mobile_navbar {
+    display: grid;
+    grid-template-columns: 20% auto;
+    background: #f9f9f9 !important;
+    height: 60px;
+  }
+  .mobile_navbar_menu_button_container {
+    margin-top: 20%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mobile_navbar_logo {
+    margin-right: auto;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  .mobile_navbar_logo img {
+    max-height: 30px;
+  }
+  .mobile_navbar_menu_button_container {
+    width: 32px;
+    height: 34px;
+    background: transparent linear-gradient(180deg, #4a90e2 0%, #c471ed 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  .mobile_navbar_menu_button_container button {
+    width: 30px;
+    height: 32px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /*  Footer mobile */
+  .mobile_footer {
+    margin-top: 4%;
+    padding-left: 5%;
+    background: #f9f9f9;
+    display: block;
+    padding-bottom: 5%;
+  }
+  .mobile_footer .img img {
+    margin-top: 6%;
+    max-height: 30px;
+  }
+  .mobile_footer .links p a {
+    text-decoration: none;
+    color: #888888;
+    font-weight: 500;
+  }
+  .mobile_footer .contacts {
+    margin-top: 7%;
+  }
+  .mobile_footer .contacts button {
+    margin-left: 35%;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    opacity: 1;
+    color: #4a90e2;
+    background: #fff;
+  }
+  .mobile_footer .contacts a {
+    text-decoration: none;
+    color: #4a90e2;
+    padding-right: 5%;
+  }
+  .footer_copyright {
+    text-align: center;
+    color: #888888;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  /* Produit mobile */
+  .mobile_product_wrapper {
+    display: block;
+  }
+  .mobile_product_wrapper .notabank {
+    display: block;
+  }
+  .mobile_product_wrapper .sendmoney {
+    background: #f4f4f4;
+    display: block;
+  }
+  .mobile_product_wrapper .notabank .first {
+    padding: 2%;
+  }
+  .mobile_product_wrapper .sendmoney .first {
+    padding: 4%;
+  }
+  .mobile_product_wrapper .notabank .second,
+  .mobile_product_wrapper .sendmoney .second,
+  .mobile_product_wrapper .crypto .second {
+    text-align: center;
+  }
+  .mobile_product_wrapper .transfer .first {
+    padding: 4%;
+  }
+  .mobile_product_wrapper .transfer .second {
+    padding: 1%;
+  }
+
+  .mobile_product_wrapper .crypto {
+    display: block;
+    background: #f4f4f4;
+  }
+  .mobile_product_wrapper .crypto .first,
+  .mobile_product_wrapper .crypto_doc .first {
+    padding: 2%;
+  }
+
+  .mobile_product_wrapper .crypto_doc {
+    display: block;
+  }
+
+  .mobile_product_wrapper .transfer .first .transfer_button,
+  .mobile_product_wrapper .transfer .second .transfer_button {
+    width: 200px;
+    height: 38px;
+    background: transparent linear-gradient(115deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+  }
+
+  .mobile_product_wrapper .transfer .first .transfer_button button,
+  .mobile_product_wrapper .transfer .second .transfer_button button {
+    width: 198px;
+    height: 35px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #222222;
+    border-radius: 7px;
+    opacity: 1;
+  }
+  .mobile_product_wrapper .crypto_doc .first .crypto_doc_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    width: 300px;
+    height: 38px;
+    background: transparent linear-gradient(115deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+  }
+  .mobile_product_wrapper .crypto_doc .first .crypto_doc_button button {
+    width: 296px;
+    height: 34px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #222222;
+    border-radius: 7px;
+    opacity: 1;
+  }
+
+  .mobile_product_wrapper .crypto_doc .second .crypto_doc_links {
+    text-align: center;
+  }
+  .mobile_product_wrapper .crypto_doc .second .crypto_doc_links a img {
+    max-width: 120px;
+  }
+
+  /* developpers mobile */
+  .mobile_dev_wrapper {
+    display: block;
+  }
+  .default_payment {
+    display: block;
+  }
+  .default_payment.bg {
+    background: #f4f4f4;
+  }
+  .default_payment .first {
+    padding: 4%;
+  }
+  .default_payment .second {
+    text-align: center;
+  }
+
+  .default_button {
+    margin-top: 4%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .default_button_wordpress {
+    margin-top: 6%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent linear-gradient(107deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    width: 250px;
+    height: 40px;
+  }
+  .default_button_wordpress button,
+  .mobile_wallet .get_now_button button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #222222;
+    border-radius: 7px;
+    opacity: 1;
+    width: 246px;
+    height: 36px;
+  }
+  .default_button button.api {
+    width: 250px;
+    height: 45px;
+    border: 2px solid #4a90e2;
+    border-radius: 7px;
+    opacity: 1;
+    background: #fff;
+  }
+
+  /* pricing mobile */
+  .mobile_pricing_wrapper,
+  .mobile_wallet,
+  .mobile_wallet .first {
+    display: block;
+  }
+  .mobile_wallet {
+    margin-top: 4%;
+  }
+  .mobile_wallet .first {
+    padding: 4%;
+  }
+  .mobile_wallet .card_first {
+    text-align: center;
+  }
+  .mobile_wallet .get_now_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    text-align: center;
+    background: transparent linear-gradient(107deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    width: 250px;
+    height: 40px;
+  }
+
+  .mobile_offer_basic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    background: #f4f4f4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000026;
+    border-radius: 7px;
+    opacity: 1;
+    width: 329px;
+    height: 270px;
+  }
+  .mobile_offer_basic .button_account,
+  .mobile_offer_premium .button_account {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    width: 270px;
+    height: 40px;
+    background: transparent linear-gradient(111deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+  }
+
+  .mobile_offer_basic .button_account button,
+  .mobile_offer_premium .button_account button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #222222;
+    border-radius: 7px;
+    opacity: 1;
+    width: 267px;
+    height: 37px;
+  }
+
+  .mobile_offer_premium {
+    margin-left: auto;
+    margin-right: auto;
+    width: 329px;
+    height: 270px;
+    margin-top: 10%;
+    background: transparent linear-gradient(180deg, #4a90e2 0%, #c471ed 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000026;
+    border-radius: 7px;
+    opacity: 1;
+    margin-bottom: 5%;
+  }
+}
+/*
+*
+*
+*
+*
+*
+*
+*/
+
+@media only screen and (max-width: 767px) {
+  .navbar,
+  .footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .product_wrapper .product_wrapper_left {
+    padding-left: 4%;
+  }
+  .product_wrapper .product_wrapper_right {
+    padding-left: 2%;
+  }
+
+  .transfer_wrapper_left_first_section img {
+    grid-column-start: 1;
+  }
+  .transfer_wrapper_right {
+    padding-left: 1px;
+  }
+  .product_wrapper .product_wrapper_right.pay {
+    padding-left: 0;
+  }
+  .product_wrapper_right img.img_resp {
+    max-height: 320px;
+  }
+  .pricing_content_right img {
+    width: 100%;
+  }
+  .pricing_content_left p {
+    font-size: 20px;
+  }
+  .pricing_content_left h1 {
+    font-size: 45px;
+  }
+  .offer_content_left .offer_button_container,
+  .offer_content_right .offer_button_container {
+    width: 250px;
+    height: 40px;
+  }
+  .offer_button_container button.offer_button,
+  .offer_button_container button.offer_button {
+    width: 100%;
+  }
 }
