@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/payqin_v2/static/css/main.6f2c8368.chunk.css",
-    "main.js": "/payqin_v2/static/js/main.ead0b610.chunk.js",
-    "main.js.map": "/payqin_v2/static/js/main.ead0b610.chunk.js.map",
+    "main.js": "/payqin_v2/static/js/main.24cd16bc.chunk.js",
+    "main.js.map": "/payqin_v2/static/js/main.24cd16bc.chunk.js.map",
     "runtime-main.js": "/payqin_v2/static/js/runtime-main.0e453213.js",
     "runtime-main.js.map": "/payqin_v2/static/js/runtime-main.0e453213.js.map",
     "static/js/2.9a3c9c6e.chunk.js": "/payqin_v2/static/js/2.9a3c9c6e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.0e453213.js",
     "static/js/2.9a3c9c6e.chunk.js",
     "static/css/main.6f2c8368.chunk.css",
-    "static/js/main.ead0b610.chunk.js"
+    "static/js/main.24cd16bc.chunk.js"
   ]
 }
