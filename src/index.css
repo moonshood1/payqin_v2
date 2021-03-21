@@ -488,11 +488,9 @@ button.get_now_button {
   }
   .App {
     display: block;
-    overflow-y: auto !important;
   }
   .app_content {
     display: block;
-    overflow-y: auto !important;
   }
 
   .web_view {
