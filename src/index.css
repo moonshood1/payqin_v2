@@ -484,13 +484,15 @@ button.get_now_button {
 @media screen and (max-width: 640px) {
   html,
   body {
-    overflow: scroll !important;
+    overflow: auto !important;
   }
   .App {
     display: block;
+    overflow-y: auto !important;
   }
   .app_content {
     display: block;
+    overflow-y: auto !important;
   }
 
   .web_view {
@@ -499,6 +501,7 @@ button.get_now_button {
 
   .mobile_view {
     display: block !important;
+    overflow-y: auto !important;
   }
   .navbar,
   .footer {
