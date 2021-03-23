@@ -21,7 +21,7 @@
   width: 100%;
   background: #f9f9f9;
   transition: 0.6s;
-  z-index: 100000;
+  z-index: 11;
 }
 
 .mobile_navbar {
@@ -56,8 +56,8 @@
 
 .navbar .navbar_links a {
   text-decoration: none;
-  color: #222222;
-  margin-inline: 10px;
+  color: #888888;
+  margin-inline: 12px;
   font-weight: 500;
 }
 .navbar .navbar_links a.is_active {
@@ -68,6 +68,21 @@
   color: #4a90e2;
   text-decoration: underline;
 }
+.navbar .navbar_button {
+  margin-top: 20px;
+  margin-right: 1%;
+  background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 7px;
+  height: 35px;
+}
+.navbar .navbar_button button {
+  height: 32px;
+  color: #888888;
+  font-weight: 500;
+  border-radius: 7px;
+  cursor: pointer;
+}
 
 /* Footer */
 .footer {
@@ -75,7 +90,7 @@
   grid-template-rows: 80% 20%;
   background: #f9f9f9;
   height: 85px;
-  z-index: 10000;
+  z-index: 10;
 }
 
 .footer_first_section {
@@ -127,6 +142,82 @@
   margin-bottom: 10px;
   color: #888888;
   font-size: 12px;
+}
+
+/* Dropdown */
+.dropdown_container {
+  position: absolute;
+  z-index: 15;
+  width: 150px;
+  height: 120px;
+  top: 7%;
+  left: 71%;
+  background: transparent linear-gradient(356deg, #4a90e2 0%, #c471ed 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 8px 36px #0000001f;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.dropdown_content {
+  width: 141px;
+  height: 111px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 4px 8px 36px #0000001f;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  opacity: 1;
+}
+.dropdown_content p {
+  margin-top: 3%;
+  margin-left: 4%;
+}
+.dropdown_content p a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.dropdown_content p a:hover {
+  color: #3c3b3b;
+}
+
+/* Modal de creation de compte */
+.modal_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 17;
+  padding-top: 10%;
+}
+
+.modal_container {
+  display: grid;
+  grid-template-rows: 10% auto;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: white;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.modal_close button {
+  float: right;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_close button:hover {
+  background: rgb(161, 1, 1);
 }
 
 /* Content structure */
@@ -482,15 +573,15 @@ button.get_now_button {
 */
 
 @media screen and (max-width: 640px) {
-  html,
-  body {
+  .fp-enabled body,
+  html.fp-enabled {
     overflow: auto !important;
   }
   .App {
     display: block;
   }
   .app_content {
-    display: block;
+    display: block !important;
   }
 
   .web_view {
@@ -499,7 +590,6 @@ button.get_now_button {
 
   .mobile_view {
     display: block !important;
-    overflow-y: auto !important;
   }
   .navbar,
   .footer {
@@ -864,5 +954,176 @@ button.get_now_button {
   .offer_button_container button.offer_button,
   .offer_button_container button.offer_button {
     width: 100%;
+  }
+}
+
+/*
+  *
+  *
+  *
+  *
+  *
+  */
+/* Très grands écrans */
+@media screen and (min-width: 1500px) and (max-width: 6000px) {
+  .app_content {
+    height: 788px;
+  }
+
+  h1.wrapper_title {
+    font-size: 102px;
+  }
+
+  p.wrapper_text {
+    color: #888888;
+    font-size: 32px;
+    margin-top: 2%;
+  }
+
+  .wrapper_button_ios a img.ios {
+    margin-right: 10px;
+    max-width: 250px;
+  }
+
+  .wrapper_button_google a img.google {
+    width: 250px;
+  }
+
+  .product_wrapper .product_wrapper_right {
+    padding-left: 20%;
+  }
+
+  .product_wrapper_right img {
+    margin-top: 10%;
+    max-height: 700px;
+  }
+
+  .product_wrapper_right.resp {
+    margin-top: 15% !important;
+  }
+  .product_wrapper_right.resp.sales {
+    margin-left: 22% !important;
+  }
+  .product_wrapper_right.pay.resp {
+    margin-left: 22% !important;
+  }
+
+  .transfer_wrapper {
+    height: 850px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .transfer_wrapper_left {
+    height: 850px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+  .transfer_wrapper_left_first_section {
+    display: grid;
+    grid-template-columns: 0;
+  }
+  .transfer_wrapper_left_second_section h1,
+  .transfer_wrapper_right_first_section h1 {
+    color: #222222;
+    font-size: 102px;
+  }
+  .transfer_wrapper_left_second_section p,
+  .transfer_wrapper_right_first_section p {
+    color: #888888;
+    font-size: 46px;
+  }
+
+  .transfer_button {
+    width: 320px;
+    height: 70px;
+  }
+
+  .transfer_wrapper_right {
+    height: 850px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding-left: 0;
+  }
+
+  .transfer_button button.transfer_button_learn_more {
+    width: 318px;
+    height: 68px;
+  }
+
+  .transfer_wrapper_right .transfer_wrapper_right_second_section img {
+    max-width: 650px;
+  }
+
+  .crypto_doc_wrapper {
+    padding-top: 7%;
+    text-align: center;
+  }
+  .crypto_doc_wrapper .crypto_doc_first_section h1 {
+    font-size: 105px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  .crypto_doc_wrapper .crypto_doc_first_section p {
+    color: #888888;
+    font-size: 46px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+  .crypto_doc_first_section .button_container {
+    width: 450px;
+    height: 70px;
+  }
+  .crypto_doc_first_section .button_container button.crypto_doc_link_create {
+    width: 448px;
+    height: 68px;
+  }
+
+  .crypto_doc_buttons .crypto_doc_buttons_off img.ios,
+  .crypto_doc_buttons .crypto_doc_buttons_off img.google {
+    max-width: 250px;
+  }
+
+  .product_wrapper .product_wrapper_right.pay {
+    padding-left: 0;
+  }
+
+  .crypto_doc_wrapper.wordpress_cont {
+    height: 850px !important;
+  }
+
+  .wrapper_links button.api_doc_button {
+    width: 450px;
+    height: 60px;
+  }
+
+  .pricing_content {
+    margin-top: 13%;
+    height: 400px;
+  }
+
+  .pricing_offer_content {
+    margin-top: 20%;
+  }
+
+  .navbar .navbar_logo img,
+  .footer .footer_logo img {
+    max-height: 25px;
+    max-width: 110px;
+    padding: 10px;
+  }
+  .navbar .navbar_logo img {
+    margin-top: 25%;
+    margin-left: 150%;
+  }
+
+  .navbar .navbar_links {
+    margin-top: 1%;
+  }
+
+  .navbar .navbar_links a {
+    margin-inline: 15px;
+    font-size: 20px;
   }
 }

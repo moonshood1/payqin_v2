@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const Crypto = () => {
   return (
     <div className="product_wrapper bg-dark">
@@ -10,7 +11,8 @@ const Crypto = () => {
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">
             <a href="/appstore">
-              <img
+              <motion.img
+                whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
                 alt="App store download"
                 className="ios"
@@ -19,7 +21,8 @@ const Crypto = () => {
           </div>
           <div className="wrapper_button_google">
             <a href="/playstore">
-              <img
+              <motion.img
+                whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
                 alt="Play Store download"
                 className="google"
@@ -30,7 +33,8 @@ const Crypto = () => {
       </div>
       <div className="product_wrapper_right">
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/buy-sell-crypto_2x_dvaeaf.png"
+          /*src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/buy-sell-crypto_2x_dvaeaf.png"*/
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1616431141/payqin/website/1_ipfubb.png"
           alt="Crypto image"
         />
       </div>

@@ -1,4 +1,5 @@
 import MobileFooter from "./MobileFooter";
+import $ from "jquery";
 
 const MobilePricing = () => {
   return (

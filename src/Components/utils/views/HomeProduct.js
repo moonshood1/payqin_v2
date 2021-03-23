@@ -17,6 +17,7 @@ const HomeProduct = () => {
             scrollingSpeed={1500}
             navigation={true}
             navigationPosition="right"
+            dragAndMove={true}
             render={({ state, fullpageApi }) => {
               return (
                 <ReactFullpage.Wrapper>

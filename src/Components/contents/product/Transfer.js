@@ -1,4 +1,15 @@
+import { motion } from "framer-motion";
+
 const Transfer = () => {
+  const buttonVariant = {
+    hover: {
+      scale: 1.03,
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity,
+      },
+    },
+  };
   return (
     <div className="transfer_wrapper">
       <div className="transfer_wrapper_left">
@@ -8,27 +19,38 @@ const Transfer = () => {
             alt="Boah Paid Amalaman"
           />
         </div>
-        <div className="transfer_wrapper_left_second_section">
-          <h1>Pay Business</h1>
-          <p>
+        <div
+          className="transfer_wrapper_left_second_section"
+          style={{ paddingLeft: "3%" }}
+        >
+          <h1 style={{ fontSize: "63px" }}>Pay Business</h1>
+          <p style={{ fontSize: "23px" }}>
             A safe and secure environment for your internet transactions
             anywhere in the world
           </p>
-          <div className="transfer_button">
+          <motion.div
+            variants={buttonVariant}
+            whileHover="hover"
+            className="transfer_button"
+          >
             <button className="transfer_button_learn_more">learn more</button>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="transfer_wrapper_right">
+      <div className="transfer_wrapper_right" style={{ paddingRight: "3%" }}>
         <div className="transfer_wrapper_right_first_section">
-          <h1>Pay Friends</h1>
-          <p>
+          <h1 style={{ fontSize: "63px" }}>Pay Friends</h1>
+          <p style={{ fontSize: "23px" }}>
             A safe and secure environment for your internet transactions
             anywhere in the world
           </p>
-          <div className="transfer_button">
+          <motion.div
+            variants={buttonVariant}
+            whileHover="hover"
+            className="transfer_button"
+          >
             <button className="transfer_button_learn_more">learn more</button>
-          </div>
+          </motion.div>
         </div>
         <div className="transfer_wrapper_right_second_section">
           <img

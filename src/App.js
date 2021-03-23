@@ -1,23 +1,44 @@
-import Footer from "./Components/utils/Footer";
+import { useState } from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/utils/Navbar";
+import MobileNavbar from "./Components/contents/mobile_version/MobileNavbar";
 import HomeProduct from "./Components/utils/views/HomeProduct";
 import HomeDev from "./Components/utils/views/HomeDev";
 import HomePricing from "./Components/utils/views/HomePricing";
-import { HashRouter, Route, Switch } from "react-router-dom";
-import MobileNavbar from "./Components/contents/mobile_version/MobileNavbar";
-import MobileFooter from "./Components/contents/mobile_version/MobileFooter";
+import Footer from "./Components/utils/Footer";
+import Modal from "./Components/utils/Modal";
+import { AnimatePresence } from "framer-motion";
+import Dropdown from "./Components/utils/Dropdown";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <HashRouter>
       <div className="App">
-        <Navbar />
+        <Navbar
+          showModal={showModal}
+          setShowModal={setShowModal}
+          showDropdown={showDropdown}
+          setShowDropdown={setShowDropdown}
+        />
+        <Dropdown
+          showDropdown={showDropdown}
+          setShowDropdown={setShowDropdown}
+        />
         <MobileNavbar />
+        <Modal showModal={showModal} setShowModal={setShowModal} />
         <div className="app_content">
           <Switch>
-            <Route path="/developpers" component={HomeDev}></Route>
-            <Route path="/pricing" component={HomePricing}></Route>
-            <Route path="/" component={HomeProduct}></Route>
+            <Route path="/developpers">
+              <HomeDev />
+            </Route>
+            <Route path="/pricing">
+              <HomePricing />
+            </Route>
+            <Route path="/">
+              <HomeProduct />
+            </Route>
           </Switch>
         </div>
         <Footer />

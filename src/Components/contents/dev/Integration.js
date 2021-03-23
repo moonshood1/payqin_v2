@@ -1,4 +1,14 @@
+import { motion } from "framer-motion";
 const Payment = () => {
+  const buttonVariant = {
+    hover: {
+      scale: 1.03,
+      transition: {
+        duration: 0.3,
+        yoyo: 10,
+      },
+    },
+  };
   return (
     <div className="product_wrapper">
       <div className="product_wrapper_left">
@@ -8,10 +18,19 @@ const Payment = () => {
           Countries
         </p>
         <div className="wrapper_links">
-          <button className="api_doc_button">api documentation</button>
+          <motion.button
+            variants={buttonVariant}
+            whileHover="hover"
+            className="api_doc_button"
+          >
+            api documentation
+          </motion.button>
         </div>
       </div>
-      <div className="product_wrapper_right pay" style={{ marginTop: "50px" }}>
+      <div
+        className="product_wrapper_right pay resp"
+        style={{ marginTop: "50px" }}
+      >
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978215/payqin/website/API-Illustration_kqv6dk.png"
           alt=" two talking about api"

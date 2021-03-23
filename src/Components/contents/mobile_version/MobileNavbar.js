@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 const MobileNavbar = () => {
+  const handleClick = () => {
+    console.log("Click sur le bouton");
+  };
   return (
     <div className="mobile_navbar">
       <div className="mobile_navbar_menu_button_container">
-        <button>
+        <button onClick={handleClick}>
           <i className="fas fa-bars"></i>
         </button>
       </div>

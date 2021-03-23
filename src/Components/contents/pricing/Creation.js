@@ -1,15 +1,49 @@
+import { motion } from "framer-motion";
+
 const Creation = () => {
+  const wrapperVariant = {
+    hidden: {
+      y: "-250vw",
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        type: "tween",
+      },
+    },
+  };
+  const buttonVariant = {
+    hover: {
+      scale: 1.03,
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity,
+      },
+    },
+  };
   return (
-    <div className="pricing_wrapper">
+    <motion.div
+      variants={wrapperVariant}
+      initial="hidden"
+      animate="visible"
+      className="pricing_wrapper"
+    >
       <div></div>
       <div className="pricing_content">
         <div className="pricing_content_left">
           <h1>Get $5 in PayQin Wallet</h1>
           <p>- Virtual Card funding: 650 XOF on any amount</p>
           <p>- Virtual card withdrawal: Free</p>
-          <div className="pricing_button_get_now">
+          <motion.div
+            variants={buttonVariant}
+            whileHover="hover"
+            className="pricing_button_get_now"
+          >
             <button className="get_now_button">get now</button>
-          </div>
+          </motion.div>
         </div>
         <div className="pricing_content_right">
           <img
@@ -20,7 +54,7 @@ const Creation = () => {
         </div>
       </div>
       <div></div>
-    </div>
+    </motion.div>
   );
 };
 
