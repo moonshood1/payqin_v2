@@ -9,22 +9,22 @@ const MobileFooter = () => {
           />
         </div>
         <div className="links">
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">About</a>{" "}
           </p>
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">Blog</a>{" "}
           </p>
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">Help</a>{" "}
           </p>
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">Insurance</a>{" "}
           </p>
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">Help Notice</a>
           </p>
-          <p style={{ paddingTop: "2%" }}>
+          <p style={{ paddingTop: "1%" }}>
             <a href="#">PayQin Ambassadors</a>
           </p>
         </div>

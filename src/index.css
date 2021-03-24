@@ -584,6 +584,9 @@ button.get_now_button {
   .mobile_view {
     display: block !important;
   }
+  .app_content {
+    height: 800px;
+  }
   .navbar,
   .footer,
   .web_view,
@@ -660,6 +663,31 @@ button.get_now_button {
     font-weight: 700;
   }
 
+  /* Carousel */
+  .carousel .slide {
+    text-align: initial !important;
+  }
+
+  .carousel .slide img {
+    width: auto !important;
+  }
+
+  .carousel img {
+    width: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none;
+  }
+
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+
+  .carousel .carousel-status {
+    display: none !important;
+  }
+
   /* Barre de navigation mobile */
   .mobile_navbar {
     display: grid;
@@ -700,7 +728,6 @@ button.get_now_button {
 
   /*  Footer mobile */
   .mobile_footer {
-    margin-top: 4%;
     padding-left: 5%;
     background: #f9f9f9;
     display: block;
@@ -742,6 +769,7 @@ button.get_now_button {
   /* Produit mobile */
   .mobile_product_wrapper {
     display: block;
+    height: 100%;
   }
   .mobile_product_wrapper .notabank {
     display: block;
@@ -771,6 +799,7 @@ button.get_now_button {
   .mobile_product_wrapper .crypto {
     display: block;
     background: #f4f4f4;
+    height: 100%;
   }
   .mobile_product_wrapper .crypto .first,
   .mobile_product_wrapper .crypto_doc .first {
@@ -833,9 +862,11 @@ button.get_now_button {
   }
   .default_payment {
     display: block;
+    height: 100%;
   }
   .default_payment.bg {
     background: #f4f4f4;
+    height: 100%;
   }
   .default_payment .first {
     padding: 4%;

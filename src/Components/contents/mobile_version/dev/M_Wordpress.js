@@ -1,6 +1,6 @@
 const MWordpress = () => {
   return (
-    <div className="default_payment bg">
+    <div className="default_payment bg" style={{ height: "100%" }}>
       <div className="first">
         <h1 style={{ fontSize: "26px" }}>Wordpress Plugin</h1>
         <p style={{ color: "#888888", marginTop: "2%" }}>

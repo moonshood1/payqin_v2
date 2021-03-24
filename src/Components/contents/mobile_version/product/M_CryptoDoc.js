@@ -18,13 +18,15 @@ const MCryptoDoc = () => {
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_kveok0.png"
               alt=""
-              style={{ marginRight: "2px" }}
+              height="45px"
+              style={{ marginRight: "8px" }}
             />
           </a>
           <a href="#">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/Google-CTA_dcj7d0.png"
               alt=""
+              height="45px"
             />
           </a>
         </div>

@@ -1,3 +1,5 @@
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Mcreation from "./pricing/M_Creation";
 import MOfferBasic from "./pricing/M_Offer";
 import MOfferPremium from "./pricing/M_OfferPremium";
@@ -6,15 +8,17 @@ import MobileFooter from "./MobileFooter";
 const MobilePricing = () => {
   return (
     <div className="mobile_pricing_wrapper">
-      <div className="section">
-        <Mcreation />
-      </div>
-      <div className="section">
-        <MOfferBasic />
-      </div>
-      <div className="section">
-        <MOfferPremium />
-      </div>
+      <Carousel autoPlay={false} axis="vertical">
+        <div style={{ height: "432px" }}>
+          <Mcreation />
+        </div>
+        <div style={{ height: "432px" }}>
+          <MOfferBasic />
+        </div>
+        <div style={{ height: "432px" }}>
+          <MOfferPremium />
+        </div>
+      </Carousel>
       <MobileFooter />
     </div>
   );

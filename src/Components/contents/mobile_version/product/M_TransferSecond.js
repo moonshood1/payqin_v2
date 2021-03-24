@@ -1,8 +1,8 @@
-const MTransfer = () => {
+const MTransferSecond = () => {
   return (
     <div className="transfer" style={{ height: "100%" }}>
-      <div className="first">
-        <h1 style={{ fontSize: "26px" }}>Pay Business</h1>
+      <div className="second">
+        <h1 style={{ fontSize: "26px" }}>Pay Friends</h1>
         <p style={{ color: "#888888" }}>
           A safe and secure environment for your internet transactions anywhere
           in the world
@@ -12,9 +12,9 @@ const MTransfer = () => {
         </div>
         <div className="img">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978189/payqin/website/pay-friends_rcmrwj.png"
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978188/payqin/website/pay-business_kl246i.png"
             alt=""
-            height="250"
+            height="190"
           />
         </div>
       </div>
@@ -22,4 +22,4 @@ const MTransfer = () => {
   );
 };
 
-export default MTransfer;
+export default MTransferSecond;

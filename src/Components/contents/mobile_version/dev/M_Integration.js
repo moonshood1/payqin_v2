@@ -1,6 +1,10 @@
 const MIntegration = () => {
   return (
-    <div className="default_payment" style={{ marginBottom: "4%" }}>
+    <div
+      className="default_payment"
+      style={{ marginBottom: "4%" }}
+      style={{ height: "100%" }}
+    >
       <div className="first">
         <h1 style={{ fontSize: "26px" }}>
           Integrate the PayQin Payment Method
