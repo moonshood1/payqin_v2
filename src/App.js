@@ -8,7 +8,6 @@ import HomePricing from "./Components/utils/views/HomePricing";
 import Footer from "./Components/utils/Footer";
 import Modal from "./Components/utils/Modal";
 import Overlay from "./Components/utils/Overlay";
-import { AnimatePresence } from "framer-motion";
 import Dropdown from "./Components/utils/Dropdown";
 
 function App() {

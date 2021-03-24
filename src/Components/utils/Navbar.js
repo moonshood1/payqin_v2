@@ -32,7 +32,7 @@ const Navbar = ({ showModal, setShowModal, setShowDropdown, showDropdown }) => {
         >
           Products
           <span style={{ marginLeft: "6px" }}>
-            <i class="fas fa-caret-down"></i>
+            <i className="fas fa-caret-down"></i>
           </span>
         </NavLink>
         <NavLink activeClassName="is_active" to="/developpers">

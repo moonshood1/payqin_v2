@@ -5,7 +5,8 @@ const Payment = () => {
       scale: 1.03,
       transition: {
         duration: 0.3,
-        yoyo: 10,
+        repeat: Infinity,
+        repeatType: "reverse",
       },
     },
   };

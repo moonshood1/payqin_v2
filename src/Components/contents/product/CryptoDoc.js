@@ -5,7 +5,8 @@ const CryptoDoc = () => {
       scale: 1.03,
       transition: {
         duration: 0.3,
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType: "reverse",
       },
     },
   };
@@ -26,7 +27,7 @@ const CryptoDoc = () => {
       </div>
       <div className="crypto_doc_buttons">
         <div className="crypto_doc_buttons_off">
-          <a href="/appstore">
+          <a href="/appstore" style={{ marginRight: "10px" }}>
             <motion.img
               whileHover={{ scale: 1.06 }}
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"

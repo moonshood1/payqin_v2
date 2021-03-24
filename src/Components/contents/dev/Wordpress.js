@@ -5,7 +5,8 @@ const Wordpress = () => {
       scale: 1.03,
       transition: {
         duration: 0.3,
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType: "reverse",
       },
     },
   };
