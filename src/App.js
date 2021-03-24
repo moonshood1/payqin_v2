@@ -7,12 +7,15 @@ import HomeDev from "./Components/utils/views/HomeDev";
 import HomePricing from "./Components/utils/views/HomePricing";
 import Footer from "./Components/utils/Footer";
 import Modal from "./Components/utils/Modal";
+import Overlay from "./Components/utils/Overlay";
 import { AnimatePresence } from "framer-motion";
 import Dropdown from "./Components/utils/Dropdown";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
+
   return (
     <HashRouter>
       <div className="App">
@@ -26,7 +29,11 @@ function App() {
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />
-        <MobileNavbar />
+        <MobileNavbar
+          showOverlay={showOverlay}
+          setShowOverlay={setShowOverlay}
+        />
+        <Overlay showOverlay={showOverlay} setShowOverlay={setShowOverlay} />
         <Modal showModal={showModal} setShowModal={setShowModal} />
         <div className="app_content">
           <Switch>

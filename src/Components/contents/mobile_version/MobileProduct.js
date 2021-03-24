@@ -2,7 +2,7 @@ import MobileFooter from "./MobileFooter";
 
 const MobileProduct = () => {
   return (
-    <div className="mobile_product_wrapper">
+    <div className="mobile_product_wrapper" style={{ overflow: "auto" }}>
       <div className="notabank">
         <div className="first">
           <h1 style={{ fontSize: "26px" }}>We’re not Bank, We’re better</h1>
@@ -19,7 +19,7 @@ const MobileProduct = () => {
           />
         </div>
       </div>
-      <div className="sendmoney">
+      {/*<div className="sendmoney">
         <div className="first">
           <h1 style={{ fontSize: "26px" }}>Send Money to Friends</h1>
           <p style={{ color: "#888888", marginTop: "20px" }}>
@@ -115,7 +115,7 @@ const MobileProduct = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       <MobileFooter />
     </div>
   );

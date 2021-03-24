@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-const MobileNavbar = () => {
+
+const MobileNavbar = ({ showOverlay, setShowOverlay }) => {
   const handleClick = () => {
-    console.log("Click sur le bouton");
+    setShowOverlay(true);
   };
   return (
     <div className="mobile_navbar">

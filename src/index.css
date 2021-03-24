@@ -24,9 +24,8 @@
   z-index: 11;
 }
 
-.mobile_navbar {
-  display: none;
-}
+.mobile_navbar,
+.overlay_background,
 .mobile_footer {
   display: none;
 }
@@ -577,25 +576,17 @@ button.get_now_button {
   html.fp-enabled {
     overflow: auto !important;
   }
-  .App {
+  .App,
+  .overlay_background {
     display: block;
   }
-  .app_content {
-    display: block !important;
-  }
-
-  .web_view {
-    display: none;
-  }
-
+  .app_content,
   .mobile_view {
     display: block !important;
   }
   .navbar,
-  .footer {
-    display: none;
-  }
-
+  .footer,
+  .web_view,
   #fp-nav ul,
   .fp-slidesNav ul {
     display: none;
@@ -604,6 +595,69 @@ button.get_now_button {
   .mobile_app_content {
     display: block;
     margin-top: 20px;
+  }
+
+  /* Menu Overlay */
+
+  .overlay_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.875);
+    z-index: 18;
+  }
+
+  .overlay_container {
+    display: grid;
+    grid-template-rows: 30% auto 20%;
+  }
+  .overlay_close {
+    width: 100%;
+  }
+  .overlay_close button {
+    float: right;
+    background: rgb(198, 2, 2);
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-right: 5%;
+    margin-top: 5%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .overlay_content {
+    margin-left: 10%;
+  }
+  .overlay_content p {
+    line-height: 30px;
+  }
+  .overlay_content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+
+  .overlay_button {
+    margin-top: 10%;
+    margin-left: 10%;
+    background: transparent linear-gradient(109deg, #c471ed 0%, #4a90e2 100%) 0%
+      0% no-repeat padding-box;
+    border-radius: 7px;
+    height: 35px;
+    width: 150px;
+  }
+
+  .overlay_button button {
+    height: 32px;
+    width: 147px;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
   }
 
   /* Barre de navigation mobile */
