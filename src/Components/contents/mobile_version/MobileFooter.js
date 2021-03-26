@@ -8,7 +8,7 @@ const MobileFooter = () => {
             alt=""
           />
         </div>
-        <div className="links">
+        {/* <div className="links">
           <p style={{ paddingTop: "1%" }}>
             <a href="#">About</a>{" "}
           </p>
@@ -27,7 +27,7 @@ const MobileFooter = () => {
           <p style={{ paddingTop: "1%" }}>
             <a href="#">PayQin Ambassadors</a>
           </p>
-        </div>
+        </div> */}
         <div className="contacts">
           <a href="https://twitter.com/payqinn?lang=fr">
             <i className="fab fa-twitter"></i>
@@ -40,9 +40,9 @@ const MobileFooter = () => {
           </a>
           <button>Contact us</button>
         </div>
-      </div>
-      <div className="footer_copyright" style={{ background: "#fff" }}>
-        PayQin © 2021 All Rights Reserved
+        <div className="footer_copyright" style={{ background: "#fff" }}>
+          PayQin © 2021 Tous droits reservés
+        </div>
       </div>
     </div>
   );

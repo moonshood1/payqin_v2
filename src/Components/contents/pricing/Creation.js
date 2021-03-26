@@ -35,15 +35,22 @@ const Creation = () => {
       <div></div>
       <div className="pricing_content">
         <div className="pricing_content_left">
-          <h1>Get $5 in PayQin Wallet</h1>
-          <p>- Virtual Card funding: 650 XOF on any amount</p>
-          <p>- Virtual card withdrawal: Free</p>
+          <h1>{/*Get $5 in PayQin Wallet */} Obtenez $5 dans votre Wallet</h1>
+          <p>
+            - Frais recharge carte virtuelle : <b>650 XOF</b> tout montant
+            {/*Virtual Card funding: 650 XOF on any amount*/}
+          </p>
+          <p>
+            - {/*Virtual card
+            withdrawal: Free*/}
+            Frais de retrait sur carte virtuelle : <b>Gratuit</b>
+          </p>
           <motion.div
             variants={buttonVariant}
             whileHover="hover"
             className="pricing_button_get_now"
           >
-            <button className="get_now_button">get now</button>
+            <button className="get_now_button">Obtenir une carte</button>
           </motion.div>
         </div>
         <div className="pricing_content_right">

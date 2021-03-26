@@ -42,10 +42,10 @@ const Modal = ({ showModal, setShowModal }) => {
               <button onClick={closeModal}>X</button>
             </div>
             <div className="modal_content" style={{ marginTop: "5%" }}>
-              <h1>Account Creation</h1>
-              <p style={{ color: "#888888" }}>
-                To create an account, you need first of all , to download the
-                App on your phone depending on your OS
+              <h1>Création de compte</h1>
+              <p style={{ color: "#888888", marginTop: "2%" }}>
+                Pour créér un compte , vous devez d'abord telecharger
+                l'application sur Ios ou Android
               </p>
               <div className="crypto_doc_buttons" style={{ marginTop: "5%" }}>
                 <div className="crypto_doc_buttons_off">

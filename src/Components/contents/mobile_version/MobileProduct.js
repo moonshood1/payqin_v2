@@ -12,22 +12,22 @@ const MobileProduct = () => {
   return (
     <div className="mobile_product_wrapper">
       <Carousel autoPlay={false} axis="vertical">
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MNotABank />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MPhysical />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MTransfer />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MTransferSecond />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MCrypto />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MCryptoDoc />
         </div>
       </Carousel>

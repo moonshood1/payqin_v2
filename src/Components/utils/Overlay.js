@@ -48,22 +48,22 @@ const Overlay = ({ showOverlay, setShowOverlay }) => {
             <div className="overlay_content">
               <p>
                 <Link to="/products" onClick={closeOverlay}>
-                  Products
+                  Produits
                 </Link>
               </p>
               <p>
                 <Link to="/developpers" onClick={closeOverlay}>
-                  Developpers
+                  Developpeurs
                 </Link>
               </p>
               <p>
                 <Link to="/pricing" onClick={closeOverlay}>
-                  Pricing
+                  Tarification
                 </Link>
               </p>
             </div>
             <div className="overlay_button">
-              <button>Create account</button>
+              <button>Créer un compte</button>
             </div>
           </motion.div>
         </motion.div>

@@ -4,10 +4,14 @@ const Sales = () => {
   return (
     <div className="product_wrapper">
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">Track Your Sales in Africa</h1>
+        <h1 className="wrapper_title">
+          {/*Track Your Sales in Africa*/} Suivez vos ventes partout en afrique
+        </h1>
         <p className="wrapper_text">
-          Weekly detailed sales reports, real-time sales figures and best seller
-          reports.
+          Rapports hebdomadaires des ventes, Suivi en temps réel et Rapport du
+          meilleur vendeur
+          {/*Weekly detailed sales reports, real-time sales figures and best seller
+          reports.*/}
         </p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">

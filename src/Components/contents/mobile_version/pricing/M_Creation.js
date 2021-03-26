@@ -3,11 +3,13 @@ const Mcreation = () => {
     <div className="creation_container_mobile" style={{ height: "100%" }}>
       <div className="mobile_wallet">
         <div className="first">
-          <h1 style={{ fontSize: "26px" }}>Get $5 in PayQin Wallet</h1>
+          <h1 style={{ fontSize: "26px" }}>Obtenez $5 dans votre Wallet</h1>
           <p style={{ color: "#888888", marginTop: "4%" }}>
-            - Virtual Card Funding: 650 XOF On Any Amount
+            - Frais recharge carte virtuelle : <b>650 XOF</b> tout montant
           </p>
-          <p style={{ color: "#888888" }}>- Virtual Card Withdrawal: Free</p>
+          <p style={{ color: "#888888" }}>
+            - Frais de retrait sur carte virtuelle : <b>Gratuit</b>
+          </p>
         </div>
         <div className="card_first">
           <img
@@ -16,11 +18,11 @@ const Mcreation = () => {
             height="190"
           />
           <p style={{ marginTop: "4%" }}>
-            <b>Price : 10 000 XOF</b>
+            <b>Prix : 10 000 XOF</b>
           </p>
         </div>
         <div className="get_now_button">
-          <button>get now</button>
+          <button>Obtenir une carte</button>
         </div>
       </div>
     </div>

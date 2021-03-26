@@ -28,16 +28,16 @@ const Dropdown = ({ showDropdown, setShowDropdown }) => {
         >
           <div className="dropdown_content">
             <p>
-              <a href="#">PayQin cards</a>
+              <a href="#">Cartes PayQin</a>
             </p>
             <p>
-              <a href="#">Insurance</a>
+              <a href="#">Assurance</a>
             </p>
             <p>
-              <a href="#">Crypto</a>
+              <a href="#">Cryptomonnaie</a>
             </p>
             <p>
-              <a href="#">Downloads</a>
+              <a href="#">Téléchargements</a>
             </p>
           </div>
         </motion.div>

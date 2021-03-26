@@ -1,19 +1,17 @@
 const MSales = () => {
   return (
-    <div
-      className="default_payment bg"
-      style={{ marginBottom: "4%" }}
-      style={{ height: "100%" }}
-    >
-      <div className="first">
-        <h1 style={{ fontSize: "26px" }}>Track Your Sales in Africa</h1>
-        <p style={{ color: "#888888", marginTop: "2%" }}>
-          Weekly Detailed Sales Reports, Real-Time Sales Figures And Best Seller
-          Reports.
+    <div className="default_payment bg" style={{ height: "100%" }}>
+      <div className="first" style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+          Suivez vos ventes partout en afrique
+        </h1>
+        <p style={{ color: "#888888", marginTop: "5%" }}>
+          Rapports hebdomadaires des ventes, Suivi en temps réel et Rapport du
+          meilleur vendeur
         </p>
         <div
           className="buttons"
-          style={{ marginTop: "3%", display: "flex", paddingLeft: "12%" }}
+          style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
             <a href="/appstore">
@@ -35,7 +33,7 @@ const MSales = () => {
           </div>
         </div>
       </div>
-      <div className="second">
+      <div className="second" style={{ marginTop: "10%" }}>
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978216/payqin/website/track-sales_vngpvr.png"
           alt=""

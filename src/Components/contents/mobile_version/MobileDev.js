@@ -10,16 +10,16 @@ const MobileDev = () => {
   return (
     <div className="mobile_dev_wrapper">
       <Carousel autoPlay={false} axis="vertical">
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MPayment />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MSales />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MIntegration />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MWordpress />
         </div>
       </Carousel>

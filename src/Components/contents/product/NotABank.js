@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const NotABank = () => {
   const titleVariant = {
@@ -23,7 +24,8 @@ const NotABank = () => {
           initial="hidden"
           animate="visible"
         >
-          We’re not a Bank, We’re better
+          {/*  We're not a Bank , We're Better  */}
+          Nous ne sommes pas une banque , nous sommes meilleurs
         </motion.h1>
         <motion.p
           initial={{ x: "-250vw" }}
@@ -36,8 +38,10 @@ const NotABank = () => {
           }}
           className="wrapper_text"
         >
-          A safe and secure environment for your internet transactions anywhere
-          in the world
+          {/*  A safe and secure environment for your internet transactions anywhere
+          in the world  */}
+          Un environnement fiable et securisé pour vos transactions internet
+          partout dans le monde
         </motion.p>
         <motion.div
           initial={{ y: "350vw" }}

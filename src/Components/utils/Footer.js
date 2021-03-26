@@ -9,11 +9,11 @@ const Footer = () => {
           />
         </div>
         <div className="footer_links">
-          <a href="/about">About</a>
-          <a href="/help">Help</a>
-          <a href="https://assurance.payqin.com">Insurance</a>
-          <a href="https://ambassadeur.payqin.com">PayQin Ambassadors</a>
-          <a href="/legal">Legal Notice</a>
+          <a href="/about">A propos</a>
+          <a href="/help">Aide</a>
+          <a href="https://assurance.payqin.com">Assurance</a>
+          <a href="https://ambassadeur.payqin.com">Ambassadeurs PayQin</a>
+          <a href="/legal">Mention légale</a>
         </div>
         <div className="footer_socials">
           <a href="https://www.facebook.com/payqin/">
@@ -26,13 +26,13 @@ const Footer = () => {
             <i className="fab fa-instagram"></i>
           </a>
           <div className="footer_contact">
-            <button className="footer_contact_button">Contact us</button>
+            <button className="footer_contact_button">Contactez-nous</button>
           </div>
         </div>
       </div>
       <div className="footer_second_section">
         <div className="footer_website_reference">
-          <p>PayQin © 2021 All Rights Reserved</p>
+          <p>PayQin © 2021 Tous droits reservés</p>
         </div>
       </div>
     </div>

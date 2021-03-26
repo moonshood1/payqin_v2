@@ -13,10 +13,15 @@ const Payment = () => {
   return (
     <div className="product_wrapper">
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">Integrate the PayQin Payment Method</h1>
+        <h1 className="wrapper_title">
+          {/*Integrate the PayQin Payment Method*/}
+          Integrez la méthode de paiement PayQin
+        </h1>
         <p className="wrapper_text">
-          Integrate our Payment Method to reach out Million Users in Multiple
-          Countries
+          {/*Integrate our Payment Method to reach out Million Users in Multiple
+          Countries*/}
+          Integrez notre méthode de paiement pour atteindre des millions
+          d'utilisateurs dans plusieurs pays
         </p>
         <div className="wrapper_links">
           <motion.button
@@ -24,7 +29,7 @@ const Payment = () => {
             whileHover="hover"
             className="api_doc_button"
           >
-            api documentation
+            Documentation de l'API
           </motion.button>
         </div>
       </div>

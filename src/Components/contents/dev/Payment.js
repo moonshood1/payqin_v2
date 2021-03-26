@@ -25,10 +25,15 @@ const Payment = () => {
       className="product_wrapper"
     >
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">Send and Receive Online Payment</h1>
+        <h1 className="wrapper_title">
+          {/*Send and Receive Online Payment*/}
+          Envoyez et recevez des paiements en ligne
+        </h1>
         <p className="wrapper_text">
-          Sell online in African currencies with our Checkout. Implement our
-          checkout and start selling
+          {/* Sell online in African currencies with our Checkout. Implement our
+          checkout and start selling*/}
+          Vendez en ligne en devises africaines avec notre système de paiement.
+          Implementez notre système de paiement et commencez à vendre
         </p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">

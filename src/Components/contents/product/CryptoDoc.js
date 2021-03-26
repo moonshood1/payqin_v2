@@ -14,15 +14,21 @@ const CryptoDoc = () => {
     <div className="crypto_doc_wrapper">
       <div className="crypto_doc_first_section">
         <h1 style={{ marginLeft: "2%" }}>
-          Create Your Account and Start Trading
+          {/*Create Your Account and Start Trading*/}
+          Créer un compte et commencez à trader
         </h1>
-        <p>Ready to Start Trading in Cryptocurrencies in just 10 mins?</p>
+        <p>
+          {/*Ready to Start Trading in Cryptocurrencies in just 10 mins?*/}
+          Prêt à commencer à trader en cryptomonnaie en Juste 10 minutes ?
+        </p>
         <motion.div
           variants={buttonVariant}
           whileHover="hover"
           className="button_container"
         >
-          <button className="crypto_doc_link_create">Create account</button>
+          <button className="crypto_doc_link_create">
+            {/* Create account*/} Ouvrir un compte
+          </button>
         </motion.div>
       </div>
       <div className="crypto_doc_buttons">

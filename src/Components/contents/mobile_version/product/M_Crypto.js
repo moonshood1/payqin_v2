@@ -1,15 +1,17 @@
 const MCrypto = () => {
   return (
     <div className="crypto">
-      <div className="first">
-        <h1 style={{ fontSize: "26px" }}>Buy and Sell Crypto</h1>
-        <p style={{ color: "#888888" }}>
-          PayQin is the fastest app to convert your money into bitcoin buying
-          and selling. We got you covered
+      <div className="first" style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+          Achetez et vendez de la cryptomonnaie
+        </h1>
+        <p style={{ color: "#888888", marginTop: "5%" }}>
+          PayQin est l'application la plus rapide pour convertir votre argent en
+          bitcoin. Nous nous couvrons
         </p>
         <div
           className="buttons"
-          style={{ marginTop: "3%", display: "flex", paddingLeft: "12%" }}
+          style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
             <a href="/appstore">
@@ -31,7 +33,7 @@ const MCrypto = () => {
           </div>
         </div>
       </div>
-      <div className="second">
+      <div className="second" style={{ marginTop: "10%" }}>
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978184/payqin/website/buy-sell-crypto_e9rshf.png"
           alt=""

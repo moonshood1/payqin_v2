@@ -22,33 +22,43 @@ const Transfer = () => {
           className="transfer_wrapper_left_second_section"
           style={{ paddingLeft: "3%" }}
         >
-          <h1 style={{ fontSize: "63px" }}>Pay Business</h1>
+          <h1 style={{ fontSize: "63px" }}>
+            {/*Pay Business*/} Payez vos business
+          </h1>
           <p style={{ fontSize: "23px" }}>
-            A safe and secure environment for your internet transactions
-            anywhere in the world
+            {/* A safe and secure environment for your
+            internet transactions anywhere in the world*/}
+            Un environnement fiable et securisé pour vos transactions internet
+            partout dans le monde
           </p>
           <motion.div
             variants={buttonVariant}
             whileHover="hover"
             className="transfer_button"
           >
-            <button className="transfer_button_learn_more">learn more</button>
+            <button className="transfer_button_learn_more">
+              {/*learn more*/} En savoir plus
+            </button>
           </motion.div>
         </div>
       </div>
       <div className="transfer_wrapper_right" style={{ paddingRight: "3%" }}>
         <div className="transfer_wrapper_right_first_section">
-          <h1 style={{ fontSize: "63px" }}>Pay Friends</h1>
+          <h1 style={{ fontSize: "63px" }}>{/*Pay Friends*/} Payez vos amis</h1>
           <p style={{ fontSize: "23px" }}>
-            A safe and secure environment for your internet transactions
-            anywhere in the world
+            {/* A safe and secure environment for your
+            internet transactions anywhere in the world*/}
+            Un environnement fiable et securisé pour vos transactions internet
+            partout dans le monde
           </p>
           <motion.div
             variants={buttonVariant}
             whileHover="hover"
             className="transfer_button"
           >
-            <button className="transfer_button_learn_more">learn more</button>
+            <button className="transfer_button_learn_more">
+              {/*learn more*/}En savoir plus
+            </button>
           </motion.div>
         </div>
         <div className="transfer_wrapper_right_second_section">

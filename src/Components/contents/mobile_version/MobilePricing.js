@@ -9,13 +9,13 @@ const MobilePricing = () => {
   return (
     <div className="mobile_pricing_wrapper">
       <Carousel autoPlay={false} axis="vertical">
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <Mcreation />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MOfferBasic />
         </div>
-        <div style={{ height: "432px" }}>
+        <div style={{ height: "700px" }}>
           <MOfferPremium />
         </div>
       </Carousel>

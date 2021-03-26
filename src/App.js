@@ -52,5 +52,4 @@ function App() {
     </HashRouter>
   );
 }
-// Ajouter le rooter ici , qui va pointer vers une principale (product), modifier App en grid puis fixer le footer tout en bas des rows
 export default App;

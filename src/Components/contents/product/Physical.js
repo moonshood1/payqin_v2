@@ -4,10 +4,12 @@ const Physical = () => {
     <div className="product_wrapper bg-dark">
       <div className="product_wrapper_left">
         <h1 className="wrapper_title" style={{ fontSize: "63px" }}>
-          Send Money to Friends
+          {/*  Send Money to Friends  */}
+          Envoyez de l'argent à vos proches
         </h1>
         <p className="wrapper_text" style={{ fontSize: "23px" }}>
-          You like it virtual or Physical ? We got both for you
+          {/*You like it virtual or Physical ? We got both for you*/}
+          Carte Physique ou Carte Virtuelle ? A vous de décider
         </p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">

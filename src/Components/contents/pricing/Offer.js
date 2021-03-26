@@ -16,17 +16,17 @@ const Offer = () => {
       <div className="pricing_offer_content">
         <div className="offer_content_left">
           <small>
-            <b>free</b>
+            <b>Gratuit</b>
           </small>
           <h2>Basic</h2>
           <ul>
-            <motion.li whileHover={{ x: 5 }}>€ 0 Monthly Fee</motion.li>
+            <motion.li whileHover={{ x: 5 }}>€ 0 Frais mensuel</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Reload The Account - 3.5%
+              Rechargement du compte - 3.5%
             </motion.li>
-            <motion.li whileHover={{ x: 5 }}>Withdrawal - 2%</motion.li>
+            <motion.li whileHover={{ x: 5 }}>Retrait - 2%</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Free Transfer In 4 Countries
+              Transferts gratuits vers 4 pays
             </motion.li>
           </ul>
           <motion.div
@@ -34,23 +34,23 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">Open Account</button>
+            <button className="offer_button">Ouvrir un compte</button>
           </motion.div>
         </div>
         <div></div>
         <div className="offer_content_right">
           <small>
-            <b>€ 12/ Yearly</b>
+            <b>€ 12/ An</b>
           </small>
           <h2>Premium</h2>
           <ul>
-            <motion.li whileHover={{ x: 5 }}>€ 0 Monthly Fee</motion.li>
+            <motion.li whileHover={{ x: 5 }}>€ 0 Frais mensuel</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Reload The Account - 3.5%
+              Rechargement du compte - 3.5%
             </motion.li>
-            <motion.li whileHover={{ x: 5 }}>Withdrawal - 2%</motion.li>
+            <motion.li whileHover={{ x: 5 }}>Retrait - 2%</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              3 Year Master card Limit
+              Une Mastercard d'une durée de 3 ans
             </motion.li>
           </ul>
           <motion.div
@@ -58,7 +58,7 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">Open Account</button>
+            <button className="offer_button">Ouvrir un compte</button>
           </motion.div>
         </div>
       </div>

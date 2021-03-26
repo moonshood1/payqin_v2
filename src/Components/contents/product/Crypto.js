@@ -3,10 +3,14 @@ const Crypto = () => {
   return (
     <div className="product_wrapper bg-dark">
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">Buy and Sell Crypto</h1>
+        <h1 className="wrapper_title">
+          {/*Buy and Sell Crypto*/} Achetez et vendez de la cryptomonnaie
+        </h1>
         <p className="wrapper_text">
-          PayQin is the fastest app to convert your money into bitcoin buying
-          and selling. We got you covered
+          {/*PayQin is the fastest app to convert your money into bitcoin buying
+          and selling. We got you covered*/}
+          PayQin est l'application la plus rapide pour convertir votre argent en
+          bitcoin. Nous nous couvrons
         </p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">

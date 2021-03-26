@@ -260,7 +260,7 @@
 }
 
 h1.wrapper_title {
-  font-size: 72px;
+  font-size: 60px;
 }
 
 p.wrapper_text {
@@ -309,11 +309,15 @@ p.wrapper_text {
 
 .crypto_doc_wrapper {
   padding-top: 7%;
+  text-align: center !important;
+  width: 100%;
+}
+.crypto_doc_wrapper .crypto_doc_first_section {
   text-align: center;
 }
 
 .crypto_doc_wrapper .crypto_doc_first_section h1 {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 700;
   color: #222222;
 }
@@ -451,6 +455,7 @@ p.wrapper_text {
   border-radius: 25px;
   display: grid;
   grid-template-columns: 50% 50%;
+  box-shadow: 0px 8px 10px #00000026;
 }
 
 .pricing_content_left {
@@ -507,6 +512,7 @@ button.get_now_button {
   padding-top: 20%;
   padding-left: 4%;
   height: 400px;
+  box-shadow: 0px 8px 10px #00000026;
 }
 
 .offer_content_left small,
@@ -688,6 +694,17 @@ button.get_now_button {
     display: none !important;
   }
 
+  .carousel .control-dots {
+    width: auto !important;
+    top: 45% !important;
+  }
+
+  .carousel .control-dots .dot {
+    display: block !important;
+    margin: 10px 8px !important;
+    background: #000 !important;
+  }
+
   /* Barre de navigation mobile */
   .mobile_navbar {
     display: grid;
@@ -728,14 +745,16 @@ button.get_now_button {
 
   /*  Footer mobile */
   .mobile_footer {
-    padding-left: 5%;
     background: #f9f9f9;
-    display: block;
-    padding-bottom: 5%;
+    display: grid;
+    width: 100% !important;
+    bottom: 0 !important;
+    position: absolute;
   }
   .mobile_footer .img img {
-    margin-top: 6%;
-    max-height: 30px;
+    margin-left: 2%;
+    margin-top: 2%;
+    max-height: 20px;
   }
   .mobile_footer .links p a {
     text-decoration: none;
@@ -743,10 +762,11 @@ button.get_now_button {
     font-weight: 500;
   }
   .mobile_footer .contacts {
-    margin-top: 7%;
+    margin-left: 2%;
+    margin-top: 2%;
   }
   .mobile_footer .contacts button {
-    margin-left: 35%;
+    margin-left: 45%;
     border: 2px solid #4a90e2;
     border-radius: 5px;
     opacity: 1;
@@ -759,6 +779,8 @@ button.get_now_button {
     padding-right: 5%;
   }
   .footer_copyright {
+    width: 100%;
+    margin-top: 2%;
     text-align: center;
     color: #888888;
     padding: 4px;
@@ -1052,16 +1074,16 @@ button.get_now_button {
 /* Très grands écrans */
 @media screen and (min-width: 1500px) and (max-width: 6000px) {
   .app_content {
-    height: 788px;
+    height: 735px;
   }
 
   h1.wrapper_title {
-    font-size: 102px;
+    font-size: 72px;
   }
 
   p.wrapper_text {
     color: #888888;
-    font-size: 32px;
+    font-size: 26px;
     margin-top: 2%;
   }
 
@@ -1079,8 +1101,16 @@ button.get_now_button {
   }
 
   .product_wrapper_right img {
-    margin-top: 10%;
-    max-height: 700px;
+    margin-top: 5%;
+    max-height: 650px;
+  }
+
+  .product_wrapper_right.resp {
+    margin-top: 2px !important;
+  }
+
+  .product_wrapper_right.resp img {
+    height: 450px !important;
   }
 
   .product_wrapper_right.resp {
@@ -1140,18 +1170,22 @@ button.get_now_button {
   }
 
   .crypto_doc_wrapper {
-    padding-top: 7%;
+    width: 100%;
+    padding-top: 3%;
     text-align: center;
   }
+  .crypto_doc_first_section {
+    text-align: center !important;
+  }
   .crypto_doc_wrapper .crypto_doc_first_section h1 {
-    font-size: 105px;
+    font-size: 72px;
     font-weight: 700;
     color: #222222;
   }
 
   .crypto_doc_wrapper .crypto_doc_first_section p {
     color: #888888;
-    font-size: 46px;
+    font-size: 26px;
     margin-top: 1%;
     margin-bottom: 2%;
   }
@@ -1190,6 +1224,14 @@ button.get_now_button {
 
   .pricing_offer_content {
     margin-top: 20%;
+  }
+
+  .pricing_offer_content {
+    margin-top: 10%;
+  }
+  .offer_content_left,
+  .offer_content_right {
+    padding-top: 0;
   }
 
   .navbar .navbar_logo img,

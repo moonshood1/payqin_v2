@@ -1,14 +1,16 @@
 const MPhysical = () => {
   return (
     <div className="sendmoney">
-      <div className="first">
-        <h1 style={{ fontSize: "26px" }}>Send Money to Friends</h1>
-        <p style={{ color: "#888888", marginTop: "20px" }}>
-          You Like It Virtual Or Physical ? We Got Both For You
+      <div className="first" style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+          Envoyez de l'argent à vos proches
+        </h1>
+        <p style={{ color: "#888888", marginTop: "5%" }}>
+          Carte Physique ou Carte Virtuelle ? A vous de décider
         </p>
         <div
           className="buttons"
-          style={{ marginTop: "3%", display: "flex", paddingLeft: "12%" }}
+          style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
             <a href="/appstore">
@@ -30,7 +32,7 @@ const MPhysical = () => {
           </div>
         </div>
       </div>
-      <div className="second">
+      <div className="second" style={{ marginTop: "10%" }}>
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/hands-illustration_egcrdr.png"
           alt=""

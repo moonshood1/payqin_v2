@@ -6,13 +6,13 @@ const MOfferBasic = () => {
           Basic
         </h1>
         <ul style={{ color: "#888888" }}>
-          <li style={{ paddingTop: "3%" }}>€ 0 Monthly Fee</li>
-          <li style={{ paddingTop: "3%" }}>Reload The Account - 3.5%</li>
-          <li style={{ paddingTop: "3%" }}>Withdrawal - 2%</li>
-          <li style={{ paddingTop: "3%" }}>Free Transfer In 4 Countries</li>
+          <li style={{ paddingTop: "3%" }}>€ 0 Frais mensuel</li>
+          <li style={{ paddingTop: "3%" }}>Rechargement du compte - 3.5%</li>
+          <li style={{ paddingTop: "3%" }}>Retrait - 2%</li>
+          <li style={{ paddingTop: "3%" }}>Transferts gratuits vers 4 pays</li>
         </ul>
         <div className="button_account">
-          <button>Create account</button>
+          <button>Ouvrir un compte</button>
         </div>
       </div>
     </div>
