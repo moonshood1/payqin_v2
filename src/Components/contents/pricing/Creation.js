@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Creation = () => {
+  const { t, i18n } = useTranslation("common");
   const wrapperVariant = {
     hidden: {
       y: "-250vw",
@@ -35,22 +37,17 @@ const Creation = () => {
       <div></div>
       <div className="pricing_content">
         <div className="pricing_content_left">
-          <h1>{/*Get $5 in PayQin Wallet */} Obtenez $5 dans votre Wallet</h1>
-          <p>
-            - Frais recharge carte virtuelle : <b>650 XOF</b> tout montant
-            {/*Virtual Card funding: 650 XOF on any amount*/}
-          </p>
-          <p>
-            - {/*Virtual card
-            withdrawal: Free*/}
-            Frais de retrait sur carte virtuelle : <b>Gratuit</b>
-          </p>
+          <h1> {t("pricing.creation.title")}</h1>
+          <p>- {t("pricing.creation.text1")}</p>
+          <p>- {t("pricing.creation.text2")}</p>
           <motion.div
             variants={buttonVariant}
             whileHover="hover"
             className="pricing_button_get_now"
           >
-            <button className="get_now_button">Obtenir une carte</button>
+            <button className="get_now_button">
+              {t("pricing.creation.button")}
+            </button>
           </motion.div>
         </div>
         <div className="pricing_content_right">

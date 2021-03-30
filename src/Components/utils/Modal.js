@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const background = {
   visible: {
@@ -10,6 +11,7 @@ const background = {
 };
 
 const Modal = ({ showModal, setShowModal }) => {
+  const { t, i18n } = useTranslation("common");
   const closeModal = () => {
     if (showModal == true) {
       setShowModal(false);
@@ -42,14 +44,13 @@ const Modal = ({ showModal, setShowModal }) => {
               <button onClick={closeModal}>X</button>
             </div>
             <div className="modal_content" style={{ marginTop: "5%" }}>
-              <h1>Création de compte</h1>
+              <h1>{t("modal.title")}</h1>
               <p style={{ color: "#888888", marginTop: "2%" }}>
-                Pour créér un compte , vous devez d'abord telecharger
-                l'application sur Ios ou Android
+                {t("modal.text")}
               </p>
               <div className="crypto_doc_buttons" style={{ marginTop: "5%" }}>
                 <div className="crypto_doc_buttons_off">
-                  <a href="/appstore">
+                  <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
                     <motion.img
                       whileHover={{ scale: 1.06 }}
                       src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
@@ -58,7 +59,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       style={{ marginRight: "2%" }}
                     />
                   </a>
-                  <a href="/playstore">
+                  <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
                     <motion.img
                       whileHover={{ scale: 1.06 }}
                       src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"

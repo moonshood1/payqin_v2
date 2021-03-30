@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const NotABank = () => {
+  const { t, i18n } = useTranslation("common");
   const titleVariant = {
     hidden: {
       y: -250,
@@ -24,8 +25,7 @@ const NotABank = () => {
           initial="hidden"
           animate="visible"
         >
-          {/*  We're not a Bank , We're Better  */}
-          Nous ne sommes pas une banque , nous sommes meilleurs
+          {t("product.notABank.title")}
         </motion.h1>
         <motion.p
           initial={{ x: "-250vw" }}
@@ -38,10 +38,7 @@ const NotABank = () => {
           }}
           className="wrapper_text"
         >
-          {/*  A safe and secure environment for your internet transactions anywhere
-          in the world  */}
-          Un environnement fiable et securisé pour vos transactions internet
-          partout dans le monde
+          {t("product.notABank.text")}
         </motion.p>
         <motion.div
           initial={{ y: "350vw" }}
@@ -50,7 +47,7 @@ const NotABank = () => {
           className="wrapper_buttons"
         >
           <div className="wrapper_button_ios">
-            <a href="/appstore">
+            <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
@@ -60,7 +57,7 @@ const NotABank = () => {
             </a>
           </div>
           <div className="wrapper_button_google">
-            <a href="/playstore">
+            <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"

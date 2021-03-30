@@ -1,19 +1,18 @@
-const MTransferSecond = () => {
+import { useTranslation } from "react-i18next";
+const MTransferSecond = ({ handleClick }) => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="transfer" style={{ height: "100%" }}>
       <div className="second" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
-          Payez vos amis {/*Pay Friends*/}
+          {t("product.transfer.title2")}
         </h1>
-        <p style={{ color: "#888888" }}>
-          Un environnement fiable et securisé pour vos transactions internet
-          partout dans le monde
-        </p>
+        <p style={{ color: "#888888" }}>{t("product.transfer.text2")}</p>
         <div
           className="transfer_button"
           style={{ marginLeft: "auto", marginRight: "auto" }}
         >
-          <button>En savoir plus</button>
+          <button onClick={handleClick}>{t("product.transfer.button")}</button>
         </div>
         <div className="img" style={{ marginTop: "15%" }}>
           <img

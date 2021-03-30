@@ -1,6 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const Navbar = ({ showModal, setShowModal, setShowDropdown, showDropdown }) => {
+const Navbar = ({
+  showModal,
+  setShowModal,
+  setShowDropdown,
+  showDropdown,
+  TraductionLinks,
+}) => {
+  const { t, i18n } = useTranslation("common");
   const handleClick = () => {
     if (showModal == false) {
       setShowModal(true);
@@ -30,21 +38,22 @@ const Navbar = ({ showModal, setShowModal, setShowDropdown, showDropdown }) => {
           to="/products"
           onClick={handleHover}
         >
-          Produits
+          {t("navbar.prod")}
           <span style={{ marginLeft: "6px" }}>
             <i className="fas fa-caret-down"></i>
           </span>
         </NavLink>
         <NavLink activeClassName="is_active" to="/developpers">
-          Developpeurs
+          {t("navbar.dev")}
         </NavLink>
         <NavLink activeClassName="is_active" to="/pricing">
-          Tarification
+          {t("navbar.price")}
         </NavLink>
       </div>
       <div className="navbar_button">
-        <button onClick={handleClick}>Ouvrir un compte</button>
+        <button onClick={handleClick}>{t("navbar.button")}</button>
       </div>
+      <TraductionLinks />
     </div>
   );
 };

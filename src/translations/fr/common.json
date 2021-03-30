@@ -1,0 +1,108 @@
+{
+  "product": {
+    "notABank": {
+      "title": "Nous ne sommes pas une banque , nous sommes meilleurs",
+      "text": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde"
+    },
+    "physical": {
+      "title": "Envoyez de l'argent à vos proches",
+      "text": "Carte Physique ou Carte Virtuelle ? A vous de décider"
+    },
+    "transfer": {
+      "title1": "Payez vos Business",
+      "text1": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde",
+      "title2": "Payez vos amis",
+      "text2": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde",
+      "button": "En savoir plus"
+    },
+    "crypto": {
+      "title": "Achetez et vendez de la cryptomonnaie",
+      "text": "PayQin est l'application la plus rapide pour convertir votre argent en bitcoin."
+    },
+    "cryptoDoc": {
+      "title": "Créer un compte et commencez à trader",
+      "text": "Prêt à commencer à trader en cryptomonnaie en Juste 10 minutes ?",
+      "button": "Ouvrir un compte"
+    }
+  },
+  "developpers": {
+    "payment": {
+      "title": "Envoyez et recevez des paiements en ligne",
+      "text": "Vendez en ligne en devises africaines avec notre système de paiement. Implementez notre système de paiement et commencez à vendre"
+    },
+    "sales": {
+      "title": "Suivez vos ventes partout en afrique",
+      "text": " Rapports hebdomadaires des ventes, Suivi en temps réel et Rapport du meilleur vendeur"
+    },
+    "integration": {
+      "title": "Integrez la méthode de paiement PayQin",
+      "text": "Integrez notre méthode de paiement pour atteindre des millions d'utilisateurs dans plusieurs pays",
+      "button": "Documentation de l'API"
+    },
+    "wordpress": {
+      "title": "Plugin Wordpress",
+      "text": "Télechargez le plugin wordpress pour intégrer PayQin comme moyen de Paiement sur vos sites",
+      "button": "Télécharger le plugin"
+    }
+  },
+  "pricing": {
+    "creation": {
+      "title": "Obtenez $5 dans votre Wallet",
+      "text1": "Frais recharge carte virtuelle : 650 XOF tout montant",
+      "text2": "Frais de retrait sur carte virtuelle : Gratuit",
+      "price": "Prix",
+      "button": "Obtenir une carte"
+    },
+    "offer": {
+      "left": {
+        "amount": "Gratuit",
+        "type": "Basic",
+        "text1": "€ 0 Frais mensuel",
+        "text2": "Rechargement du compte - 3.5%",
+        "text3": "Retrait - 2%",
+        "text4": "Transferts gratuits vers 4 pays",
+        "button": "Ouvrir un compte"
+      },
+      "right": {
+        "amount": "€ 12/ an",
+        "type": "Premium",
+        "text1": "€ 0 Frais mensuel",
+        "text2": "Rechargement du compte - 3.5%",
+        "text3": "Retrait - 2%",
+        "text4": "Une Mastercard d'une durée de 3 ans",
+        "button": "Ouvrir un compte"
+      }
+    }
+  },
+  "navbar": {
+    "prod": "Produits",
+    "dev": "Developpeurs",
+    "price": "Tarification",
+    "button": "Ouvrir un compte"
+  },
+  "footer": {
+    "about": "A propos",
+    "help": "Aide",
+    "insurance": "Assurance",
+    "ambassador": "Ambassadeurs PayQin",
+    "legal": "Mention Légale",
+    "button": "Contactez-nous",
+    "copyright": "PayQin © 2021 Tous droits reservés"
+  },
+  "overlay": {
+    "prod": "Produits",
+    "dev": "Developpeurs",
+    "price": "Tarification",
+    "button": "Ouvrir un compte"
+  },
+  "modal": {
+    "title": "Création de compte",
+    "text": "Pour créér un compte , vous devez d'abord telecharger l'application sur IOS ou Android"
+  },
+  "dropdown": {
+    "card": "Cartes PayQin",
+    "insurance": "Assurance",
+    "crypto": "Cryptomonnaie",
+    "download": "Téléchargements"
+  }
+}

@@ -1,20 +1,21 @@
+import { useTranslation } from "react-i18next";
 const MNotABank = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="notabank" style={{ height: "100%" }}>
       <div className="first" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
-          Nous ne sommes pas une banque , nous sommes meilleurs
+          {t("product.notABank.title")}
         </h1>
         <p style={{ color: "#888888", marginTop: "5%" }}>
-          Un environnement fiable et securisé pour vos transactions internet
-          partout dans le monde
+          {t("product.notABank.text")}
         </p>
         <div
           className="buttons"
           style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
-            <a href="/appstore">
+            <a href="http://onelink.to/wgx597">
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
                 alt="App store download"
@@ -23,7 +24,7 @@ const MNotABank = () => {
             </a>
           </div>
           <div className="butt_google">
-            <a href="/googleplay">
+            <a href="http://onelink.to/wgx597">
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
                 alt="Google play download"

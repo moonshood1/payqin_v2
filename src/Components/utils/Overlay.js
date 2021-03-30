@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const background = {
   hidden: {
@@ -11,6 +12,10 @@ const background = {
 };
 
 const Overlay = ({ showOverlay, setShowOverlay }) => {
+  const handleClick = () => {
+    window.open("http://onelink.to/wgx597");
+  };
+  const { t, i18n } = useTranslation("common");
   const closeOverlay = () => {
     if (showOverlay) {
       setShowOverlay(false);
@@ -48,22 +53,22 @@ const Overlay = ({ showOverlay, setShowOverlay }) => {
             <div className="overlay_content">
               <p>
                 <Link to="/products" onClick={closeOverlay}>
-                  Produits
+                  {t("overlay.prod")}
                 </Link>
               </p>
               <p>
                 <Link to="/developpers" onClick={closeOverlay}>
-                  Developpeurs
+                  {t("overlay.dev")}
                 </Link>
               </p>
               <p>
                 <Link to="/pricing" onClick={closeOverlay}>
-                  Tarification
+                  {t("overlay.price")}
                 </Link>
               </p>
             </div>
             <div className="overlay_button">
-              <button>Créer un compte</button>
+              <button onClick={handleClick}>{t("overlay.button")}</button>
             </div>
           </motion.div>
         </motion.div>

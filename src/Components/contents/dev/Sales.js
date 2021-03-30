@@ -1,21 +1,16 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Sales = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="product_wrapper">
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">
-          {/*Track Your Sales in Africa*/} Suivez vos ventes partout en afrique
-        </h1>
-        <p className="wrapper_text">
-          Rapports hebdomadaires des ventes, Suivi en temps réel et Rapport du
-          meilleur vendeur
-          {/*Weekly detailed sales reports, real-time sales figures and best seller
-          reports.*/}
-        </p>
+        <h1 className="wrapper_title"> {t("developpers.sales.title")}</h1>
+        <p className="wrapper_text">{t("developpers.sales.text")}</p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">
-            <a href="/appstore">
+            <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
@@ -25,7 +20,7 @@ const Sales = () => {
             </a>
           </div>
           <div className="wrapper_button_google">
-            <a href="/playstore">
+            <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"

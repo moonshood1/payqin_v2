@@ -1,0 +1,108 @@
+{
+  "product": {
+    "notABank": {
+      "title": "We're not a Bank , We're Better",
+      "text": "A safe and secure environment for your internet transactions anywhere in the world"
+    },
+    "physical": {
+      "title": "Send Money to Friends",
+      "text": "You like it virtual or Physical ? We got both for you"
+    },
+    "transfer": {
+      "title1": "Pay Business",
+      "text1": "A safe and secure environment for your internet transactions anywhere in the world",
+      "title2": "Pay Friends",
+      "text2": "A safe and secure environment for your internet transactions anywhere in the world",
+      "button": "Learn more"
+    },
+    "crypto": {
+      "title": "Buy and Sell Crypto",
+      "text": "PayQin is the fastest app to convert your money into bitcoin buying and selling. We got you covered"
+    },
+    "cryptoDoc": {
+      "title": "Create Your Account and Start Trading",
+      "text": "Ready to Start Trading in Cryptocurrencies in just 10 mins?",
+      "button": "Create account"
+    }
+  },
+  "developpers": {
+    "payment": {
+      "title": "Send and Receive Online Payment",
+      "text": "Sell online in African currencies with our Checkout. Implement our checkout and start selling"
+    },
+    "sales": {
+      "title": "Track Your Sales in Africa",
+      "text": "Weekly detailed sales reports, real-time sales figures and best seller reports."
+    },
+    "integration": {
+      "title": "Integrate the PayQin Payment Method",
+      "text": "Integrate our Payment Method to reach out Million Users in Multiple Countries",
+      "button": "API documentation"
+    },
+    "wordpress": {
+      "title": "Wordpress Plugin",
+      "text": "Download the wordpress plugin to integrate the PayQin payment gateway in your website",
+      "button": "Download the plugin"
+    }
+  },
+  "pricing": {
+    "creation": {
+      "title": "Get $5 in PayQin Wallet",
+      "text1": "Virtual Card funding: 650 XOF on any amount",
+      "text2": "Virtual card withdrawal: Free",
+      "price": "Price",
+      "button": "Get a card"
+    },
+    "offer": {
+      "left": {
+        "amount": "Free",
+        "type": "Basic",
+        "text1": "€ 0 Monthly Fee",
+        "text2": "Reload The Account - 3.5%",
+        "text3": "Withdrawal - 2%",
+        "text4": "Free Transfer In 4 Countries",
+        "button": "Open Account"
+      },
+      "right": {
+        "amount": "€ 12/ Yearly",
+        "type": "Premium",
+        "text1": "€ 0 Monthly Fee",
+        "text2": "Reload The Account - 3.5%",
+        "text3": "Withdrawal - 2%",
+        "text4": "3 Year Master card Limit",
+        "button": "Open Account"
+      }
+    }
+  },
+  "navbar": {
+    "prod": "Products",
+    "dev": "Developpers",
+    "price": "Pricing",
+    "button": "Create Account"
+  },
+  "footer": {
+    "about": "About",
+    "help": "Help",
+    "insurance": "Insurance",
+    "ambassador": "PayQin Ambassadors",
+    "legal": "Legal Notice",
+    "button": "Contact Us",
+    "copyright": "PayQin © 2021 All Rights Reserved"
+  },
+  "overlay": {
+    "prod": "Products",
+    "dev": "Developpers",
+    "price": "Pricing",
+    "button": "Create Account"
+  },
+  "modal": {
+    "title": "Create Account",
+    "text": "To create a payqin account, download the mobile app  on IOS or Android"
+  },
+  "dropdown": {
+    "card": "PayQin Cards",
+    "insurance": "Insurance",
+    "crypto": "Crypto",
+    "download": "Downloads"
+  }
+}

@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 const Offer = () => {
+  const { t, i18n } = useTranslation("common");
   const buttonVariant = {
     hover: {
       scale: 1.03,
@@ -16,17 +19,21 @@ const Offer = () => {
       <div className="pricing_offer_content">
         <div className="offer_content_left">
           <small>
-            <b>Gratuit</b>
+            <b>{t("pricing.offer.left.amount")}</b>
           </small>
-          <h2>Basic</h2>
+          <h2>{t("pricing.offer.left.type")}</h2>
           <ul>
-            <motion.li whileHover={{ x: 5 }}>€ 0 Frais mensuel</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Rechargement du compte - 3.5%
+              {t("pricing.offer.left.text1")}
             </motion.li>
-            <motion.li whileHover={{ x: 5 }}>Retrait - 2%</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Transferts gratuits vers 4 pays
+              {t("pricing.offer.left.text2")}
+            </motion.li>
+            <motion.li whileHover={{ x: 5 }}>
+              {t("pricing.offer.left.text3")}
+            </motion.li>
+            <motion.li whileHover={{ x: 5 }}>
+              {t("pricing.offer.left.text4")}
             </motion.li>
           </ul>
           <motion.div
@@ -34,23 +41,29 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">Ouvrir un compte</button>
+            <button className="offer_button">
+              {t("pricing.offer.left.button")}
+            </button>
           </motion.div>
         </div>
         <div></div>
         <div className="offer_content_right">
           <small>
-            <b>€ 12/ An</b>
+            <b>{t("pricing.offer.right.amount")}</b>
           </small>
-          <h2>Premium</h2>
+          <h2>{t("pricing.offer.right.type")}</h2>
           <ul>
-            <motion.li whileHover={{ x: 5 }}>€ 0 Frais mensuel</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Rechargement du compte - 3.5%
+              {t("pricing.offer.right.text1")}
             </motion.li>
-            <motion.li whileHover={{ x: 5 }}>Retrait - 2%</motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              Une Mastercard d'une durée de 3 ans
+              {t("pricing.offer.right.text2")}
+            </motion.li>
+            <motion.li whileHover={{ x: 5 }}>
+              {t("pricing.offer.right.text3")}
+            </motion.li>
+            <motion.li whileHover={{ x: 5 }}>
+              {t("pricing.offer.right.text4")}
             </motion.li>
           </ul>
           <motion.div
@@ -58,7 +71,9 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">Ouvrir un compte</button>
+            <button className="offer_button">
+              {t("pricing.offer.left.button")}
+            </button>
           </motion.div>
         </div>
       </div>

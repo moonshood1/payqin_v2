@@ -1,13 +1,17 @@
+import { useTranslation } from "react-i18next";
 const MIntegration = () => {
+  const { t, i18n } = useTranslation("common");
+  const handleClick = () => {
+    window.open("https://www.payqin.com/business-docs/#main-screen");
+  };
   return (
     <div className="default_payment" style={{ height: "100%" }}>
       <div className="first" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
-          Integrez la méthode de paiement PayQin
+          {t("developpers.integration.title")}
         </h1>
         <p style={{ color: "#888888", marginTop: "5%" }}>
-          Integrez notre méthode de paiement pour atteindre des millions
-          d'utilisateurs dans plusieurs pays
+          {t("developpers.integration.text")}
         </p>
       </div>
       <div className="second" style={{ marginTop: "7%" }}>
@@ -18,7 +22,9 @@ const MIntegration = () => {
         />
       </div>
       <div className="default_button">
-        <button className="api">api documentation</button>
+        <button className="api" onClick={handleClick}>
+          {t("developpers.integration.button")}
+        </button>
       </div>
     </div>
   );

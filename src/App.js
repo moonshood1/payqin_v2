@@ -9,47 +9,76 @@ import Footer from "./Components/utils/Footer";
 import Modal from "./Components/utils/Modal";
 import Overlay from "./Components/utils/Overlay";
 import Dropdown from "./Components/utils/Dropdown";
+import { useTranslation } from "react-i18next";
+import { Suspense } from "react";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
+  const TraductionLinks = () => {
+    const { t, i18n } = useTranslation("common");
+    return (
+      <div className="translations_buttons">
+        <a href="#">
+          <img
+            onClick={() => i18n.changeLanguage("fr")}
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617098349/payqin/website/Screenshot_316_ljuop5.png"
+            alt=""
+            height="16"
+          />
+        </a>
+        <a href="#">
+          <img
+            onClick={() => i18n.changeLanguage("en")}
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617098349/payqin/website/Screenshot_317_gigu9b.png"
+            alt=""
+            height="16"
+          />
+        </a>
+      </div>
+    );
+  };
 
   return (
-    <HashRouter>
-      <div className="App">
-        <Navbar
-          showModal={showModal}
-          setShowModal={setShowModal}
-          showDropdown={showDropdown}
-          setShowDropdown={setShowDropdown}
-        />
-        <Dropdown
-          showDropdown={showDropdown}
-          setShowDropdown={setShowDropdown}
-        />
-        <MobileNavbar
-          showOverlay={showOverlay}
-          setShowOverlay={setShowOverlay}
-        />
-        <Overlay showOverlay={showOverlay} setShowOverlay={setShowOverlay} />
-        <Modal showModal={showModal} setShowModal={setShowModal} />
-        <div className="app_content">
-          <Switch>
-            <Route path="/developpers">
-              <HomeDev />
-            </Route>
-            <Route path="/pricing">
-              <HomePricing />
-            </Route>
-            <Route path="/">
-              <HomeProduct />
-            </Route>
-          </Switch>
+    <Suspense fallback="Loading ...">
+      <HashRouter>
+        <div className="App">
+          <Navbar
+            TraductionLinks={TraductionLinks}
+            showModal={showModal}
+            setShowModal={setShowModal}
+            showDropdown={showDropdown}
+            setShowDropdown={setShowDropdown}
+          />
+          <Dropdown
+            showDropdown={showDropdown}
+            setShowDropdown={setShowDropdown}
+          />
+          <MobileNavbar
+            showOverlay={showOverlay}
+            setShowOverlay={setShowOverlay}
+            TraductionLinks={TraductionLinks}
+          />
+          <Overlay showOverlay={showOverlay} setShowOverlay={setShowOverlay} />
+          <Modal showModal={showModal} setShowModal={setShowModal} />
+          <div className="app_content">
+            <Switch>
+              <Route path="/developpers">
+                <HomeDev />
+              </Route>
+              <Route path="/pricing">
+                <HomePricing />
+              </Route>
+              <Route path="/">
+                <HomeProduct />
+              </Route>
+            </Switch>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </HashRouter>
+      </HashRouter>
+    </Suspense>
   );
 }
 export default App;

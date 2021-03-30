@@ -9,6 +9,9 @@ import MCryptoDoc from "./product/M_CryptoDoc";
 import MobileFooter from "./MobileFooter";
 
 const MobileProduct = () => {
+  const handleClick = () => {
+    window.open("http://onelink.to/wgx597");
+  };
   return (
     <div className="mobile_product_wrapper">
       <Carousel autoPlay={false} axis="vertical">
@@ -19,16 +22,16 @@ const MobileProduct = () => {
           <MPhysical />
         </div>
         <div style={{ height: "700px" }}>
-          <MTransfer />
+          <MTransfer handleClick={handleClick} />
         </div>
         <div style={{ height: "700px" }}>
-          <MTransferSecond />
+          <MTransferSecond handleClick={handleClick} />
         </div>
         <div style={{ height: "700px" }}>
           <MCrypto />
         </div>
         <div style={{ height: "700px" }}>
-          <MCryptoDoc />
+          <MCryptoDoc handleClick={handleClick} />
         </div>
       </Carousel>
       <MobileFooter />

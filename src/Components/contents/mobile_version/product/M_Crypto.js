@@ -1,20 +1,21 @@
+import { useTranslation } from "react-i18next";
 const MCrypto = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="crypto">
       <div className="first" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
-          Achetez et vendez de la cryptomonnaie
+          {t("product.crypto.title")}
         </h1>
         <p style={{ color: "#888888", marginTop: "5%" }}>
-          PayQin est l'application la plus rapide pour convertir votre argent en
-          bitcoin. Nous nous couvrons
+          {t("product.crypto.text")}
         </p>
         <div
           className="buttons"
           style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
-            <a href="/appstore">
+            <a href="http://onelink.to/wgx597">
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
                 alt="App store download"
@@ -23,7 +24,7 @@ const MCrypto = () => {
             </a>
           </div>
           <div className="butt_google">
-            <a href="/googleplay">
+            <a href="http://onelink.to/wgx597">
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
                 alt="Google play download"

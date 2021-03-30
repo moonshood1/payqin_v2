@@ -1,4 +1,6 @@
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="footer">
       <div className="footer_first_section">
@@ -9,11 +11,11 @@ const Footer = () => {
           />
         </div>
         <div className="footer_links">
-          <a href="/about">A propos</a>
-          <a href="/help">Aide</a>
-          <a href="https://assurance.payqin.com">Assurance</a>
-          <a href="https://ambassadeur.payqin.com">Ambassadeurs PayQin</a>
-          <a href="/legal">Mention légale</a>
+          <a href="/about">{t("footer.about")}</a>
+          <a href="/help">{t("footer.help")}</a>
+          <a href="https://assurance.payqin.com">{t("footer.insurance")}</a>
+          <a href="https://ambassadeur.payqin.com">{t("footer.ambassador")}</a>
+          <a href="/legal">{t("footer.legal")}</a>
         </div>
         <div className="footer_socials">
           <a href="https://www.facebook.com/payqin/">
@@ -26,13 +28,15 @@ const Footer = () => {
             <i className="fab fa-instagram"></i>
           </a>
           <div className="footer_contact">
-            <button className="footer_contact_button">Contactez-nous</button>
+            <button className="footer_contact_button">
+              {t("footer.button")}
+            </button>
           </div>
         </div>
       </div>
       <div className="footer_second_section">
         <div className="footer_website_reference">
-          <p>PayQin © 2021 Tous droits reservés</p>
+          <p>{t("footer.copyright")}</p>
         </div>
       </div>
     </div>

@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const MobileFooter = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="footer_container">
       <div className="mobile_footer">
@@ -8,26 +11,6 @@ const MobileFooter = () => {
             alt=""
           />
         </div>
-        {/* <div className="links">
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">About</a>{" "}
-          </p>
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">Blog</a>{" "}
-          </p>
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">Help</a>{" "}
-          </p>
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">Insurance</a>{" "}
-          </p>
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">Help Notice</a>
-          </p>
-          <p style={{ paddingTop: "1%" }}>
-            <a href="#">PayQin Ambassadors</a>
-          </p>
-        </div> */}
         <div className="contacts">
           <a href="https://twitter.com/payqinn?lang=fr">
             <i className="fab fa-twitter"></i>
@@ -38,10 +21,10 @@ const MobileFooter = () => {
           <a href="https://www.facebook.com/payqin/">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <button>Contact us</button>
+          <button>{t("footer.button")}</button>
         </div>
         <div className="footer_copyright" style={{ background: "#fff" }}>
-          PayQin © 2021 Tous droits reservés
+          {t("footer.copyright")}
         </div>
       </div>
     </div>

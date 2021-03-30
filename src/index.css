@@ -83,6 +83,18 @@
   cursor: pointer;
 }
 
+.navbar .translations_buttons {
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.navbar .translations_buttons a {
+  margin-right: 5px;
+}
+.navbar .translations_buttons a img:hover {
+  opacity: 0.4;
+}
+
 /* Footer */
 .footer {
   display: grid;
@@ -637,7 +649,6 @@ button.get_now_button {
     height: 30px;
     width: 30px;
   }
-
   .overlay_content {
     margin-left: 10%;
   }
@@ -708,7 +719,7 @@ button.get_now_button {
   /* Barre de navigation mobile */
   .mobile_navbar {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 20% 60% auto;
     background: #f9f9f9 !important;
     height: 60px;
   }
@@ -741,6 +752,17 @@ button.get_now_button {
     border-radius: 4px;
     opacity: 1;
     cursor: pointer;
+  }
+
+  .mobile_navbar .translations_buttons {
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .mobile_navbar .translations_buttons a {
+    margin-right: 7%;
   }
 
   /*  Footer mobile */

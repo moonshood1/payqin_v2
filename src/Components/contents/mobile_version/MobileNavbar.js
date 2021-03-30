@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const MobileNavbar = ({ showOverlay, setShowOverlay }) => {
+const MobileNavbar = ({ showOverlay, setShowOverlay, TraductionLinks }) => {
   const handleClick = () => {
     setShowOverlay(true);
   };
@@ -20,6 +20,7 @@ const MobileNavbar = ({ showOverlay, setShowOverlay }) => {
           />
         </Link>
       </div>
+      <TraductionLinks />
     </div>
   );
 };

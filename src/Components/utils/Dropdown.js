@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Dropdown = ({ showDropdown, setShowDropdown }) => {
+  const { t, i18n } = useTranslation("common");
   const handleLeave = () => {
     setShowDropdown(false);
   };
@@ -28,16 +30,16 @@ const Dropdown = ({ showDropdown, setShowDropdown }) => {
         >
           <div className="dropdown_content">
             <p>
-              <a href="#">Cartes PayQin</a>
+              <a href="#">{t("dropdown.card")}</a>
             </p>
             <p>
-              <a href="#">Assurance</a>
+              <a href="#">{t("dropdown.insurance")}</a>
             </p>
             <p>
-              <a href="#">Cryptomonnaie</a>
+              <a href="#">{t("dropdown.crypto")}e</a>
             </p>
             <p>
-              <a href="#">Téléchargements</a>
+              <a href="#">{t("dropdown.download")}</a>
             </p>
           </div>
         </motion.div>

@@ -6,17 +6,20 @@ import MOfferPremium from "./pricing/M_OfferPremium";
 import MobileFooter from "./MobileFooter";
 
 const MobilePricing = () => {
+  const handleClick = () => {
+    window.open("http://onelink.to/wgx597");
+  };
   return (
     <div className="mobile_pricing_wrapper">
       <Carousel autoPlay={false} axis="vertical">
         <div style={{ height: "700px" }}>
-          <Mcreation />
+          <Mcreation handleClick={handleClick} />
         </div>
         <div style={{ height: "700px" }}>
-          <MOfferBasic />
+          <MOfferBasic handleClick={handleClick} />
         </div>
         <div style={{ height: "700px" }}>
-          <MOfferPremium />
+          <MOfferPremium handleClick={handleClick} />
         </div>
       </Carousel>
       <MobileFooter />

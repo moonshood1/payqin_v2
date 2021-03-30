@@ -1,20 +1,16 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 const Crypto = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <div className="product_wrapper bg-dark">
       <div className="product_wrapper_left">
-        <h1 className="wrapper_title">
-          {/*Buy and Sell Crypto*/} Achetez et vendez de la cryptomonnaie
-        </h1>
-        <p className="wrapper_text">
-          {/*PayQin is the fastest app to convert your money into bitcoin buying
-          and selling. We got you covered*/}
-          PayQin est l'application la plus rapide pour convertir votre argent en
-          bitcoin. Nous nous couvrons
-        </p>
+        <h1 className="wrapper_title">{t("product.crypto.title")}</h1>
+        <p className="wrapper_text">{t("product.crypto.text")}</p>
         <div className="wrapper_buttons">
           <div className="wrapper_button_ios">
-            <a href="/appstore">
+            <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
@@ -24,7 +20,7 @@ const Crypto = () => {
             </a>
           </div>
           <div className="wrapper_button_google">
-            <a href="/playstore">
+            <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
               <motion.img
                 whileHover={{ scale: 1.06 }}
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
