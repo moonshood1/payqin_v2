@@ -2,7 +2,9 @@ const MTransfer = () => {
   return (
     <div className="transfer" style={{ height: "100%" }}>
       <div className="first" style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>Pay Business</h1>
+        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+          Payez vos business{/*Pay Business*/}
+        </h1>
         <p style={{ color: "#888888" }}>
           Un environnement fiable et securisé pour vos transactions internet
           partout dans le monde

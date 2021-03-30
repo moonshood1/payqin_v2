@@ -3,7 +3,7 @@ const MOfferPremium = () => {
     <div className="creation_container_mobile" style={{ height: "100%" }}>
       <div className="mobile_offer_premium">
         <small style={{ color: "white", paddingLeft: "7%" }}>
-          <b>€ 12/ Yearly</b>
+          <b>€ 12/ annuel</b>
         </small>
         <h1
           style={{
