@@ -14,7 +14,7 @@ const MobileProduct = () => {
   };
   return (
     <div className="mobile_product_wrapper">
-      <Carousel autoPlay={false} axis="vertical">
+      <Carousel axis="vertical" autoPlay={false}>
         <div style={{ height: "700px" }}>
           <MNotABank />
         </div>

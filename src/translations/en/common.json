@@ -55,21 +55,29 @@
     },
     "offer": {
       "left": {
-        "amount": "Free",
+        "amount": "5000 XOF",
         "type": "Basic",
-        "text1": "€ 0 Monthly Fee",
-        "text2": "Reload The Account - 3.5%",
-        "text3": "Withdrawal - 2%",
-        "text4": "Free Transfer In 4 Countries",
+        "text1": "5 dollars credit offer inside the card",
+        "text2": "Send and receive International transfer free",
+        "text3": "Card funding Free",
+        "text4": "Card Withdrawal Free ",
+        "text5": "Card transaction Free",
+        "text6": "Wallet Top up 2%",
+        "text7": "Withdrawal 2%",
         "button": "Open Account"
       },
       "right": {
-        "amount": "€ 12/ Yearly",
+        "amount": "2000 XOF /month",
         "type": "Premium",
-        "text1": "€ 0 Monthly Fee",
-        "text2": "Reload The Account - 3.5%",
-        "text3": "Withdrawal - 2%",
-        "text4": "3 Year Master card Limit",
+        "text1": "First Month Free",
+        "text2": "2 virtual cards Free",
+        "text3": "Send and receive International transfer free",
+        "text4": "Card funding Free",
+        "text5": "Card Withdrawal Free ",
+        "text6": "Card transaction Free",
+        "text7": "Wallet Top up Free until 100K and above 1%",
+        "text8": "Withdrawal Free until 100K above 1%",
+        "text9": "Crypto Account",
         "button": "Open Account"
       }
     }

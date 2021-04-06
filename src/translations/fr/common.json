@@ -55,21 +55,29 @@
     },
     "offer": {
       "left": {
-        "amount": "Gratuit",
+        "amount": "5000 XOF",
         "type": "Basic",
-        "text1": "€ 0 Frais mensuel",
-        "text2": "Rechargement du compte - 3.5%",
-        "text3": "Retrait - 2%",
-        "text4": "Transferts gratuits vers 4 pays",
+        "text1": "5 dollars offerts avec la carte",
+        "text2": "Envoi et retrait à l'international sans frais",
+        "text3": "Rechargement de carte sans frais",
+        "text4": "Retrait sur carte sans frais",
+        "text5": "Transaction sur carte sans frais",
+        "text6": "Rechargement de portefeuille - 2%",
+        "text7": "Retrait de portefeuille - 2%",
         "button": "Ouvrir un compte"
       },
       "right": {
-        "amount": "€ 12/ an",
+        "amount": "2000 XOF/ mois",
         "type": "Premium",
-        "text1": "€ 0 Frais mensuel",
-        "text2": "Rechargement du compte - 3.5%",
-        "text3": "Retrait - 2%",
-        "text4": "Une Mastercard d'une durée de 3 ans",
+        "text1": "1er Mois Gratuit",
+        "text2": "2 Cartes virtuelles offertes",
+        "text3": "Envoi et retrait à l'international sans frais",
+        "text4": "Rechargement de carte sans frais",
+        "text5": "Retrait sur carte sans frais",
+        "text6": "Transaction sur carte sans frais",
+        "text7": "Rechargement de portefeuille sans frais jusqu'a 100 000 XOF et au dessus de 1%",
+        "text8": "Retrait de portefeuille sans frais jusqu'a 100 000 XOF et au dessus de 1%",
+        "text9": "Compte Crypto",
         "button": "Ouvrir un compte"
       }
     }
