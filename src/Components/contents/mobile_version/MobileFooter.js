@@ -11,7 +11,7 @@ const MobileFooter = () => {
             alt=""
           />
         </div>
-        <div className="contacts">
+        <div className="contacts" style={{ marginBottom: "5px" }}>
           <a href="https://twitter.com/payqinn?lang=fr">
             <i className="fab fa-twitter"></i>
           </a>
@@ -23,9 +23,9 @@ const MobileFooter = () => {
           </a>
           <button>{t("footer.button")}</button>
         </div>
-        <div className="footer_copyright" style={{ background: "#fff" }}>
+        {/* <div className="footer_copyright" style={{ background: "#fff" }}>
           {t("footer.copyright")}
-        </div>
+        </div> */}
       </div>
     </div>
   );

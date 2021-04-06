@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 const MPhysical = () => {
   const { t, i18n } = useTranslation("common");
   return (
-    <div className="sendmoney">
+    <div className="sendmoney" style={{ height: "100%" }}>
       <div className="first" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
           {t("product.physical.title")}
@@ -36,7 +36,7 @@ const MPhysical = () => {
       </div>
       <div className="second" style={{ marginTop: "10%" }}>
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/hands-illustration_egcrdr.png"
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617703967/payqin/website/Sans_titre_kx1ryp.png"
           alt=""
           height="250"
         />

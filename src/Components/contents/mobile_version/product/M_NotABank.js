@@ -36,7 +36,7 @@ const MNotABank = () => {
       </div>
       <div className="second" style={{ marginTop: "10%" }}>
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978184/payqin/website/person-responsive-holdingphone_qiw6xf.png"
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617699862/payqin/website/2_fissyp_mobile_tlnvbb.png"
           alt=""
           height="250"
         />
