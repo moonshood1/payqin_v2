@@ -391,11 +391,12 @@ p.wrapper_text {
 }
 .transfer_wrapper_left_first_section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% auto;
 }
 .transfer_wrapper_left_first_section img {
   grid-column-start: 2;
-  height: 100%;
+  max-width: 450px;
+  margin-top: 2%;
 }
 .transfer_wrapper_left_second_section {
   padding-left: 2%;
@@ -1276,4 +1277,9 @@ button.get_now_button {
     margin-inline: 15px;
     font-size: 20px;
   }
+}
+
+/**  Ecran moyen (MacBook etc) **/
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
 }

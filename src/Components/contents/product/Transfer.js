@@ -16,7 +16,7 @@ const Transfer = () => {
       <div className="transfer_wrapper_left">
         <div className="transfer_wrapper_left_first_section">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978189/payqin/website/pay-friends_rcmrwj.png"
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617880269/payqin/website/__1_OtIHOOxlUMHYsSWje1TmEQ_u3migr.jpg"
             alt="Boah Paid Amalaman"
           />
         </div>
@@ -53,7 +53,7 @@ const Transfer = () => {
         </div>
         <div className="transfer_wrapper_right_second_section">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978188/payqin/website/pay-business_kl246i.png"
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617892739/payqin/website/shutterstock_1884302866_gdhme9.jpg"
             alt="two communicates"
           />
         </div>
