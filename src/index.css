@@ -252,7 +252,6 @@
 .product_wrapper {
   grid-row-start: auto;
   width: 100%;
-  /*height: 600px;*/
   overflow: hidden;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -397,6 +396,7 @@ p.wrapper_text {
   grid-column-start: 2;
   max-width: 450px;
   margin-top: 2%;
+  box-shadow: 0px 12px 10px #000000af;
 }
 .transfer_wrapper_left_second_section {
   padding-left: 2%;
@@ -432,11 +432,12 @@ p.wrapper_text {
 .transfer_wrapper_right {
   height: 550px;
   display: grid;
-  grid-template-rows: 50% 50%;
-  padding-left: 10%;
+  grid-template-rows: 40% auto;
+  padding-left: 5%;
 }
 .transfer_wrapper_right .transfer_wrapper_right_second_section img {
   max-width: 450px;
+  box-shadow: 0px 12px 10px #000000af;
 }
 
 /* Dev part */
@@ -1171,7 +1172,16 @@ button.get_now_button {
     color: #888888;
     font-size: 46px;
   }
-
+  .transfer_wrapper_left_first_section {
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+  .transfer_wrapper_left_first_section img {
+    grid-column-start: 2;
+    max-width: 550px;
+    margin-top: 2%;
+    box-shadow: 0px 12px 10px #000000af;
+  }
   .transfer_button {
     width: 320px;
     height: 70px;
@@ -1180,17 +1190,19 @@ button.get_now_button {
   .transfer_wrapper_right {
     height: 850px;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% auto;
     padding-left: 0;
+  }
+
+  .transfer_wrapper_right .transfer_wrapper_right_second_section img {
+    max-width: 550px;
+    box-shadow: 0px 12px 10px #000000af;
+    margin-left: 10%;
   }
 
   .transfer_button button.transfer_button_learn_more {
     width: 318px;
     height: 68px;
-  }
-
-  .transfer_wrapper_right .transfer_wrapper_right_second_section img {
-    max-width: 650px;
   }
 
   .crypto_doc_wrapper {
