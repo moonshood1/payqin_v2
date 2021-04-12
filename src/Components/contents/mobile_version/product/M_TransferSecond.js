@@ -19,6 +19,7 @@ const MTransferSecond = ({ handleClick }) => {
             src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617880269/payqin/website/__1_OtIHOOxlUMHYsSWje1TmEQ_u3migr.jpg"
             alt=""
             height="190"
+            style={{ boxShadow: "0px 6px 5px #000000af" }}
           />
         </div>
       </div>
