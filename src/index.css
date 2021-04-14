@@ -1291,7 +1291,64 @@ button.get_now_button {
   }
 }
 
-/**  Ecran moyen (MacBook etc) **/
+/**  Ecran moyen (MacBook) **/
 
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .navbar .navbar_links a {
+    margin-right: 15px;
+  }
+
+  .footer .footer_links a {
+    margin-right: 15px;
+  }
+  .footer .footer_socials a {
+    margin-right: 5px;
+  }
+
+  .app_content {
+    height: 512px;
+  }
+
+  .product_wrapper .product_wrapper_right {
+    padding-left: 1% !important;
+  }
+
+  .pricing_offer_content {
+    margin-top: 2%;
+  }
+
+  .pricing_content_left h1 {
+    font-size: 35px;
+  }
+  .pricing_content_left p {
+    font-size: 25px;
+  }
+
+  .offer_content_right .offer_button_container,
+  .offer_content_left .offer_button_container {
+    width: 250px;
+    height: 45px;
+  }
+
+  .offer_button_container button.offer_button,
+  .offer_button_container button.offer_button {
+    width: 248px;
+    height: 42px;
+  }
+}
+
+/**  Ecran moyen (MacBook aggrandissement) **/
+@media screen and (min-width: 1266px) and (max-width: 1365px) {
+  .app_content {
+    height: 600px;
+  }
+
+  .pricing_offer_content {
+    margin-top: 5%;
+  }
+
+  .pricing_content_right img {
+    padding-top: 6%;
+    width: 370px !important;
+  }
 }
