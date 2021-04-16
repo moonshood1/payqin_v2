@@ -162,7 +162,7 @@
   width: 150px;
   height: 120px;
   top: 7%;
-  left: 71%;
+  left: 65%;
   background: transparent linear-gradient(356deg, #4a90e2 0%, #c471ed 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 4px 8px 36px #0000001f;
@@ -1289,6 +1289,9 @@ button.get_now_button {
     margin-inline: 15px;
     font-size: 20px;
   }
+  .dropdown_container {
+    left: 70%;
+  }
 }
 
 /**  Ecran moyen (MacBook) **/
@@ -1335,6 +1338,10 @@ button.get_now_button {
     width: 248px;
     height: 42px;
   }
+
+  .dropdown_container {
+    left: 55%;
+  }
 }
 
 /**  Ecran moyen (MacBook aggrandissement) **/
@@ -1350,5 +1357,9 @@ button.get_now_button {
   .pricing_content_right img {
     padding-top: 6%;
     width: 370px !important;
+  }
+
+  .dropdown_container {
+    left: 60%;
   }
 }
