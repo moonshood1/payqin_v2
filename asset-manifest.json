@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/payqin_v2/static/css/main.85ef245a.chunk.css",
+    "main.css": "/payqin_v2/static/css/main.6f3be2dc.chunk.css",
     "main.js": "/payqin_v2/static/js/main.5ebf2f4e.chunk.js",
     "main.js.map": "/payqin_v2/static/js/main.5ebf2f4e.chunk.js.map",
     "runtime-main.js": "/payqin_v2/static/js/runtime-main.0e453213.js",
@@ -10,14 +10,14 @@
     "static/js/2.4a730a4f.chunk.js.map": "/payqin_v2/static/js/2.4a730a4f.chunk.js.map",
     "index.html": "/payqin_v2/index.html",
     "static/css/2.4ce9e501.chunk.css.map": "/payqin_v2/static/css/2.4ce9e501.chunk.css.map",
-    "static/css/main.85ef245a.chunk.css.map": "/payqin_v2/static/css/main.85ef245a.chunk.css.map",
+    "static/css/main.6f3be2dc.chunk.css.map": "/payqin_v2/static/css/main.6f3be2dc.chunk.css.map",
     "static/js/2.4a730a4f.chunk.js.LICENSE.txt": "/payqin_v2/static/js/2.4a730a4f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e453213.js",
     "static/css/2.4ce9e501.chunk.css",
     "static/js/2.4a730a4f.chunk.js",
-    "static/css/main.85ef245a.chunk.css",
+    "static/css/main.6f3be2dc.chunk.css",
     "static/js/main.5ebf2f4e.chunk.js"
   ]
 }
