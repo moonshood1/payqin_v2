@@ -1,8 +1,29 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
+const wrapperVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 0.4,
+    },
+  },
+};
+
 const MNotABank = () => {
   const { t, i18n } = useTranslation("common");
   return (
-    <div className="notabank" style={{ height: "100%" }}>
+    <motion.div
+      variants={wrapperVariant}
+      initial="hidden"
+      animate="visible"
+      className="notabank"
+      style={{ height: "100%" }}
+    >
       <div className="first" style={{ textAlign: "center" }}>
         <h1
           style={{ fontSize: "26px", marginTop: "10%" }}
@@ -44,7 +65,7 @@ const MNotABank = () => {
           height="220"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

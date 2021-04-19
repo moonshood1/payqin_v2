@@ -1,8 +1,29 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
+const wrapperVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 0.4,
+    },
+  },
+};
+
 const Mcreation = ({ handleClick }) => {
   const { t, i18n } = useTranslation("common");
   return (
-    <div className="creation_container_mobile" style={{ height: "100%" }}>
+    <motion.div
+      variants={wrapperVariant}
+      initial="hidden"
+      animate="visible"
+      className="creation_container_mobile"
+      style={{ height: "100%" }}
+    >
       <div className="mobile_wallet">
         <div className="first">
           <h1 style={{ fontSize: "26px" }}>{t("pricing.creation.title")}</h1>
@@ -25,7 +46,7 @@ const Mcreation = ({ handleClick }) => {
           <button onClick={handleClick}>{t("pricing.creation.button")}</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
