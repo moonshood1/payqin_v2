@@ -5,47 +5,27 @@ const NotABank = () => {
   const { t, i18n } = useTranslation("common");
   const titleVariant = {
     hidden: {
-      y: -250,
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        delay: 0.4,
+        duration: 0.8,
       },
     },
   };
   return (
-    <motion.div className="product_wrapper">
+    <motion.div
+      className="product_wrapper"
+      variants={titleVariant}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="product_wrapper_left">
-        <motion.h1
-          className="wrapper_title"
-          variants={titleVariant}
-          initial="hidden"
-          animate="visible"
-        >
-          {t("product.notABank.title")}
-        </motion.h1>
-        <motion.p
-          initial={{ x: "-250vw" }}
-          animate={{ x: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 1.2,
-            type: "spring",
-            stiffness: 35,
-          }}
-          className="wrapper_text"
-        >
-          {t("product.notABank.text")}
-        </motion.p>
-        <motion.div
-          initial={{ y: "350vw" }}
-          animate={{ y: 0 }}
-          transition={{ delay: 0.2, duration: 2 }}
-          className="wrapper_buttons"
-        >
+        <h1 className="wrapper_title">{t("product.notABank.title")}</h1>
+        <p className="wrapper_text">{t("product.notABank.text")}</p>
+        <div className="wrapper_buttons">
           <div className="wrapper_button_ios">
             <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
@@ -66,17 +46,13 @@ const NotABank = () => {
               />
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
       <div
         className="product_wrapper_right"
         style={{ marginTop: "3%", paddingLeft: "16%" }}
       >
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 2 }}
-          /*src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/person-holding-phone_ag0pqs.png"*/
+        <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1616431147/payqin/website/2_fissyp.png"
           alt="Not a Bank image"
         />

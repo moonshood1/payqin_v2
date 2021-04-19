@@ -5,17 +5,13 @@ const Payment = () => {
   const { t, i18n } = useTranslation("common");
   const wrapperVariant = {
     hidden: {
-      y: "250vw",
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
-        duration: 1.1,
-        type: "spring",
-        mass: 0.5,
-        damping: 15,
+        delay: 0.4,
+        duration: 0.8,
       },
     },
   };

@@ -1,27 +1,27 @@
 {
   "product": {
     "notABank": {
-      "title": "We're not a Bank , We're Better",
+      "title": "You will love to pay online!",
       "text": "A safe and secure environment for your internet transactions anywhere in the world"
     },
     "physical": {
-      "title": "Send Money to Friends",
-      "text": "You like it virtual or Physical ? We got both for you"
+      "title": "A free virtual card in less than 2 minutes",
+      "text": "Endless possibilities to buy anywhere in the world with 0 commission fees on your transactions"
     },
     "transfer": {
       "title1": "Pay Business",
-      "text1": "A safe and secure environment for your internet transactions anywhere in the world",
+      "text1": "Simplify your transactions by paying with your PayQin account free of charge",
       "title2": "Pay Friends",
-      "text2": "A safe and secure environment for your internet transactions anywhere in the world",
+      "text2": "Make international transfers free of charge in just a few clicks with your phone number",
       "button": "Learn more"
     },
     "crypto": {
       "title": "Buy and Sell Crypto",
-      "text": "PayQin is the fastest app to convert your money into bitcoin buying and selling. We got you covered"
+      "text": "PayQin is the fastest app to buy and sell Bitcoin and Ethereum"
     },
     "cryptoDoc": {
-      "title": "Create Your Account and Start Trading",
-      "text": "Ready to Start Trading in Cryptocurrencies in just 10 mins?",
+      "title": "Download PayQin now!",
+      "text": "Pay and receive your payments anywhere in the world.",
       "button": "Create account"
     }
   },
@@ -32,7 +32,7 @@
     },
     "sales": {
       "title": "Track Your Sales in Africa",
-      "text": "Weekly detailed sales reports, real-time sales figures and best seller reports."
+      "text": "Sales report, Real-time transaction monitoring, 0 commission fees on sales"
     },
     "integration": {
       "title": "Integrate the PayQin Payment Method",

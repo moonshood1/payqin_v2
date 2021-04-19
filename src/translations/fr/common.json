@@ -1,41 +1,41 @@
 {
   "product": {
     "notABank": {
-      "title": "Nous ne sommes pas une banque , nous sommes meilleurs",
-      "text": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde"
+      "title": "Vous allez aimer payer en ligne !",
+      "text": "Un environnement sûr et sécurisé pour vos transactions sur internet partout dans le monde"
     },
     "physical": {
-      "title": "Envoyez de l'argent à vos proches",
-      "text": "Carte Physique ou Carte Virtuelle ? A vous de décider"
+      "title": "Une carte virtuelle gratuite en moins de 2 minutes ",
+      "text": "Des possibilités infinies pour acheter partout dans le monde avec 0 frais de commission sur vos transactions"
     },
     "transfer": {
-      "title1": "Payez vos Business",
-      "text1": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde",
-      "title2": "Payez vos amis",
-      "text2": "Un environnement fiable et securisé pour vos transactions internet partout dans le monde",
+      "title1": "Chez les marchands",
+      "text1": "Simplifiez vos transactions en payant avec votre compte PayQin sans frais",
+      "title2": "Avec vos proches",
+      "text2": "Effectuez des transferts internationaux sans frais en quelque clics avec votre numéro de téléphone",
       "button": "En savoir plus"
     },
     "crypto": {
       "title": "Achetez et vendez de la cryptomonnaie",
-      "text": "PayQin est l'application la plus rapide pour convertir votre argent en bitcoin."
+      "text": "PayQin est l'application la plus rapide pour acheter et vendre des Bitcoin et de l'Ethereum"
     },
     "cryptoDoc": {
-      "title": "Créer un compte et commencez à trader",
-      "text": "Prêt à commencer à trader en cryptomonnaie en Juste 10 minutes ?",
+      "title": "Téléchargez PayQin maintenant !",
+      "text": "Payez et recevez vos paiements partout dans le monde.",
       "button": "Ouvrir un compte"
     }
   },
   "developpers": {
     "payment": {
       "title": "Envoyez et recevez des paiements en ligne",
-      "text": "Vendez en ligne en devises africaines avec notre système de paiement. Implementez notre système de paiement et commencez à vendre"
+      "text": "Vendez en ligne en devises africaines avec notre système de paiement."
     },
     "sales": {
       "title": "Suivez vos ventes partout en afrique",
-      "text": " Rapports hebdomadaires des ventes, Suivi en temps réel et Rapport du meilleur vendeur"
+      "text": " Rapport des ventes, Suivi en temps réel des transactions, 0 frais de commission sur les ventes"
     },
     "integration": {
-      "title": "Integrez la méthode de paiement PayQin",
+      "title": "Integrez le bouton de paiement PayQin",
       "text": "Integrez notre méthode de paiement pour atteindre des millions d'utilisateurs dans plusieurs pays",
       "button": "Documentation de l'API"
     },

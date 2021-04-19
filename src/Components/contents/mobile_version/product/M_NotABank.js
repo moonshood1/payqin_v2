@@ -4,7 +4,10 @@ const MNotABank = () => {
   return (
     <div className="notabank" style={{ height: "100%" }}>
       <div className="first" style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+        <h1
+          style={{ fontSize: "26px", marginTop: "10%" }}
+          className="productMTitle"
+        >
           {t("product.notABank.title")}
         </h1>
         <p style={{ color: "#888888", marginTop: "5%" }}>
@@ -38,7 +41,7 @@ const MNotABank = () => {
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617699862/payqin/website/2_fissyp_mobile_tlnvbb.png"
           alt=""
-          height="250"
+          height="220"
         />
       </div>
     </div>

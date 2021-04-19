@@ -22,9 +22,11 @@ const Transfer = () => {
         </div>
         <div
           className="transfer_wrapper_left_second_section"
-          style={{ paddingLeft: "3%" }}
+          style={{ paddingLeft: "7%" }}
         >
-          <h1 style={{ fontSize: "63px" }}>{t("product.transfer.title1")}</h1>
+          <h1 style={{ fontSize: "55px", marginTop: "4%" }}>
+            {t("product.transfer.title1")}
+          </h1>
           <p style={{ fontSize: "23px" }}>{t("product.transfer.text1")}</p>
           <motion.div
             variants={buttonVariant}
@@ -39,7 +41,7 @@ const Transfer = () => {
       </div>
       <div className="transfer_wrapper_right" style={{ paddingRight: "3%" }}>
         <div className="transfer_wrapper_right_first_section">
-          <h1 style={{ fontSize: "63px" }}>{t("product.transfer.title2")}</h1>
+          <h1 style={{ fontSize: "55px" }}>{t("product.transfer.title2")}</h1>
           <p style={{ fontSize: "23px" }}>{t("product.transfer.text2")}</p>
           <motion.div
             variants={buttonVariant}

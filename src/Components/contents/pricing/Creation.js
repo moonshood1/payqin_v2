@@ -5,15 +5,13 @@ const Creation = () => {
   const { t, i18n } = useTranslation("common");
   const wrapperVariant = {
     hidden: {
-      y: "-250vw",
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
-        type: "tween",
+        delay: 0.4,
+        duration: 0.8,
       },
     },
   };

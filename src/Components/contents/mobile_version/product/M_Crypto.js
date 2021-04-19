@@ -4,7 +4,10 @@ const MCrypto = () => {
   return (
     <div className="crypto">
       <div className="first" style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: "26px", marginTop: "10%" }}>
+        <h1
+          style={{ fontSize: "26px", marginTop: "10%" }}
+          className="productMTitle"
+        >
           {t("product.crypto.title")}
         </h1>
         <p style={{ color: "#888888", marginTop: "5%" }}>
