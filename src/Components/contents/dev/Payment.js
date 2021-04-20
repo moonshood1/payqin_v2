@@ -50,7 +50,7 @@ const Payment = () => {
       </div>
       <div className="product_wrapper_right resp" style={{ marginTop: "50px" }}>
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978217/payqin/website/send-receive_2x_s9usca.png"
+          src /*"https://res.cloudinary.com/dhc0siki5/image/upload/v1615978217/payqin/website/send-receive_2x_s9usca.png"*/="https://res.cloudinary.com/dhc0siki5/image/upload/v1618911655/payqin/website/ezgif-3-456b01e527_pfbqrh.gif"
           alt="a laying phone"
           height="400"
         />

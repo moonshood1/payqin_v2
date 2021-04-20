@@ -12,7 +12,8 @@ const MWordpress = () => {
         </p>
         <div className="default_button_wordpress">
           <button className="wordpress">
-            <i class="fab fa-wordpress"></i> {t("developpers.wordpress.button")}
+            <i className="fab fa-wordpress"></i>{" "}
+            {t("developpers.wordpress.button")}
           </button>
         </div>
       </div>

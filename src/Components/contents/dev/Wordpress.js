@@ -27,7 +27,8 @@ const Wordpress = () => {
           className="button_container"
         >
           <button className="crypto_doc_link_create">
-            <i class="fab fa-wordpress"></i> {t("developpers.wordpress.button")}
+            <i className="fab fa-wordpress"></i>{" "}
+            {t("developpers.wordpress.button")}
           </button>
         </motion.div>
       </div>

@@ -57,7 +57,7 @@ const MPayment = () => {
       </div>
       <div className="second" style={{ marginTop: "10%" }}>
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978216/payqin/website/send-receive_pd1wb9.png"
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1618911655/payqin/website/ezgif-3-456b01e527_pfbqrh.gif"
           alt=""
           height="200"
         />
