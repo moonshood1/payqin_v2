@@ -464,9 +464,11 @@ p.wrapper_text {
 
 .pricing_content {
   margin-top: 7%;
+  width: 900px;
   height: 400px;
   background: #f9f9f9;
   border-radius: 25px;
+  padding-bottom: 1%;
   display: grid;
   grid-template-columns: 50% 50%;
   box-shadow: 0px 8px 10px #00000026;
@@ -536,8 +538,9 @@ button.get_now_button {
 }
 .offer_content_left h2,
 .offer_content_right h2 {
+  margin-top: 4%;
   color: #000000;
-  font-size: 50px;
+  font-size: 40px;
 }
 .offer_content_left ul,
 .offer_content_right ul {

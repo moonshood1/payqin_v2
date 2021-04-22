@@ -47,37 +47,32 @@
   },
   "pricing": {
     "creation": {
-      "title": "Get $5 in PayQin Wallet",
-      "text1": "Virtual Card funding: 650 XOF on any amount",
-      "text2": "Virtual card withdrawal: Free",
+      "title": "Free Visa PayQin card",
+      "text1": "no fees for reloading and withdrawing from the card",
+      "text2": "no fees on all card transactions",
       "price": "Price",
-      "button": "Get a card"
+      "button": "Open account"
     },
     "offer": {
       "left": {
-        "amount": "5000 XOF",
-        "type": "Basic",
+        "amount": "0 XOF / Month",
+        "type": "Without engagement",
         "text1": "5 dollars credit offer inside the card",
-        "text2": "Send and receive International transfer free",
-        "text3": "Card funding Free",
-        "text4": "Card Withdrawal Free ",
-        "text5": "Card transaction Free",
-        "text6": "Wallet Top up 2%",
-        "text7": "Withdrawal 2%",
+        "text2": "Free international transfers",
+        "text3": "No fees for reloading and withdrawing from the card",
+        "text4": "Free card transactions",
+        "text5": "Reloading and withdrawal fees from the PayQin account - 2%",
         "button": "Open Account"
       },
       "right": {
-        "amount": "2000 XOF /month",
-        "type": "Premium",
-        "text1": "First Month Free",
-        "text2": "2 virtual cards Free",
-        "text3": "Send and receive International transfer free",
-        "text4": "Card funding Free",
-        "text5": "Card Withdrawal Free ",
-        "text6": "Card transaction Free",
-        "text7": "Wallet Top up Free until 100K and above 1%",
-        "text8": "Withdrawal Free until 100K above 1%",
-        "text9": "Crypto Account",
+        "amount": "2000 XOF /month - 1st Month Free",
+        "type": "With subscription",
+        "text1": "2 free virtual cards",
+        "text2": "Free international transfers",
+        "text3": "No fees for reloading and withdrawing from the card",
+        "text4": "Free card transactions",
+        "text5": "Reloading and withdrawal of the PayQin account free of charge up to 100,000 XOF and above 1%",
+        "text6": "Crypto Account",
         "button": "Open Account"
       }
     }

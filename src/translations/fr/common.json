@@ -47,37 +47,32 @@
   },
   "pricing": {
     "creation": {
-      "title": "Obtenez $5 dans votre Wallet",
-      "text1": "Frais recharge carte virtuelle : 650 XOF tout montant",
-      "text2": "Frais de retrait sur carte virtuelle : Gratuit",
+      "title": "Carte Visa PayQin gratuite",
+      "text1": "0 Frais de rechargement et de retrait sur la carte",
+      "text2": "0 Frais sur toutes les transactions de la carte",
       "price": "Prix",
-      "button": "Obtenir une carte"
+      "button": "Ouvrir un compte"
     },
     "offer": {
       "left": {
-        "amount": "5000 XOF",
-        "type": "Basic",
+        "amount": "0 XOF / Mois",
+        "type": "Sans Engagement",
         "text1": "5 dollars offerts avec la carte",
-        "text2": "Envoi et retrait à l'international sans frais",
-        "text3": "Rechargement de carte sans frais",
-        "text4": "Retrait sur carte sans frais",
-        "text5": "Transaction sur carte sans frais",
-        "text6": "Rechargement de portefeuille - 2%",
-        "text7": "Retrait de portefeuille - 2%",
+        "text2": "Transferts à l'international sans frais",
+        "text3": "Rechargement et Retrait sur carte sans frais",
+        "text4": "Transactions sur carte sans frais",
+        "text5": "Rechargement et retrait du compte PayQin - 2%",
         "button": "Ouvrir un compte"
       },
       "right": {
-        "amount": "2000 XOF/ mois",
-        "type": "Premium",
-        "text1": "1er Mois Gratuit",
-        "text2": "2 Cartes virtuelles offertes",
-        "text3": "Envoi et retrait à l'international sans frais",
-        "text4": "Rechargement de carte sans frais",
-        "text5": "Retrait sur carte sans frais",
-        "text6": "Transaction sur carte sans frais",
-        "text7": "Rechargement de portefeuille sans frais jusqu'a 100 000 XOF et au dessus de 1%",
-        "text8": "Retrait de portefeuille sans frais jusqu'a 100 000 XOF et au dessus de 1%",
-        "text9": "Compte Crypto",
+        "amount": "2000 XOF/ Mois - 1er Mois gratuit",
+        "type": "Avec Abonnement",
+        "text1": "2 Cartes virtuelles gratuites",
+        "text2": "Transferts à l'international sans frais",
+        "text3": "Rechargement et Retrait sur carte sans frais",
+        "text4": "Transactions sur carte sans frais",
+        "text5": "Rechargement et retrait du compte PayQin sans frais jusqu'a 100 000 XOF et au dessus de 1%",
+        "text6": "Compte Crypto",
         "button": "Ouvrir un compte"
       }
     }

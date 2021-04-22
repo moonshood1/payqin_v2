@@ -50,7 +50,7 @@ const Creation = () => {
         </div>
         <div className="pricing_content_right">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978215/payqin/website/payqin-cc-mockup_maeiax.png"
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1619015827/payqin/website/payQin-card-illustration_kl22uo.png"
             alt=" a payqin card"
             width="400"
           />

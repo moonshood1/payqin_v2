@@ -22,7 +22,7 @@ const Offer = () => {
             <b>{t("pricing.offer.left.amount")}</b>
           </small>
           <h2>{t("pricing.offer.left.type")}</h2>
-          <ul>
+          <ul style={{ marginTop: "2%" }}>
             <motion.li whileHover={{ x: 5 }}>
               {t("pricing.offer.left.text1")}
             </motion.li>
@@ -37,12 +37,6 @@ const Offer = () => {
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
               {t("pricing.offer.left.text5")}
-            </motion.li>
-            <motion.li whileHover={{ x: 5 }}>
-              {t("pricing.offer.left.text6")}
-            </motion.li>
-            <motion.li whileHover={{ x: 5 }}>
-              {t("pricing.offer.left.text7")}
             </motion.li>
           </ul>
           <motion.div
@@ -61,7 +55,7 @@ const Offer = () => {
             <b>{t("pricing.offer.right.amount")}</b>
           </small>
           <h2>{t("pricing.offer.right.type")}</h2>
-          <ul>
+          <ul style={{ marginTop: "2%" }}>
             <motion.li whileHover={{ x: 5 }}>
               {t("pricing.offer.right.text1")}
             </motion.li>
@@ -79,15 +73,6 @@ const Offer = () => {
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
               {t("pricing.offer.right.text6")}
-            </motion.li>
-            <motion.li whileHover={{ x: 5 }}>
-              {t("pricing.offer.right.text7")}
-            </motion.li>
-            <motion.li whileHover={{ x: 5 }}>
-              {t("pricing.offer.right.text8")}
-            </motion.li>
-            <motion.li whileHover={{ x: 5 }}>
-              {t("pricing.offer.right.text9")}
             </motion.li>
           </ul>
           <motion.div
