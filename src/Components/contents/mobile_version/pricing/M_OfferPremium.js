@@ -24,9 +24,6 @@ const MOfferPremium = ({ handleClick }) => {
           <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text4")}</li>
           <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text5")}</li>
           <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text6")}</li>
-          <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text7")}</li>
-          <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text8")}</li>
-          <li style={{ paddingTop: "2%" }}>{t("pricing.offer.right.text9")}</li>
         </ul>
         <div className="button_account">
           <button onClick={handleClick}>

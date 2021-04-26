@@ -13,8 +13,6 @@ const MOfferBasic = ({ handleClick }) => {
           <li style={{ paddingTop: "3%" }}>{t("pricing.offer.left.text3")}</li>
           <li style={{ paddingTop: "3%" }}>{t("pricing.offer.left.text4")}</li>
           <li style={{ paddingTop: "3%" }}>{t("pricing.offer.left.text5")}</li>
-          <li style={{ paddingTop: "3%" }}>{t("pricing.offer.left.text6")}</li>
-          <li style={{ paddingTop: "3%" }}>{t("pricing.offer.left.text7")}</li>
         </ul>
         <div className="button_account">
           <button onClick={handleClick}>
