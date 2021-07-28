@@ -23,7 +23,7 @@ function App() {
         <a href="#">
           <img
             onClick={() => i18n.changeLanguage("fr")}
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617098349/payqin/website/Screenshot_316_ljuop5.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/Screenshot_316_ljuop5_lph570.png"
             alt=""
             height="16"
           />
@@ -31,7 +31,7 @@ function App() {
         <a href="#">
           <img
             onClick={() => i18n.changeLanguage("en")}
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617098349/payqin/website/Screenshot_317_gigu9b.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Screenshot_317_gigu9b_otg3wr.png"
             alt=""
             height="16"
           />
@@ -68,10 +68,16 @@ function App() {
                 <HomeDev />
               </Route>
               <Route path="/pricing">
-                <HomePricing />
+                <HomePricing
+                  showModal={showModal}
+                  setShowModal={setShowModal}
+                />
               </Route>
               <Route path="/">
-                <HomeProduct />
+                <HomeProduct
+                  showModal={showModal}
+                  setShowModal={setShowModal}
+                />
               </Route>
             </Switch>
           </div>

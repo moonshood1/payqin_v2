@@ -7,7 +7,7 @@ const MobileFooter = () => {
       <div className="mobile_footer">
         <div className="img">
           <img
-            src="https://www.payqin.com/wp-content/uploads/2020/09/n3-1.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280733/main%20website/n3-1_vscqvt_ljdred.png"
             alt=""
           />
         </div>
@@ -21,7 +21,6 @@ const MobileFooter = () => {
           <a href="https://www.facebook.com/payqin/">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <button>{t("footer.button")}</button>
         </div>
         {/* <div className="footer_copyright" style={{ background: "#fff" }}>
           {t("footer.copyright")}

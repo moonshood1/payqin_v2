@@ -14,7 +14,7 @@ const wrapperVariant = {
   },
 };
 
-const MNotABank = () => {
+const MNotABank = ({ openAndroid, openApple }) => {
   const { t, i18n } = useTranslation("common");
   return (
     <motion.div
@@ -39,28 +39,28 @@ const MNotABank = () => {
           style={{ marginTop: "5%", display: "flex", paddingLeft: "12%" }}
         >
           <div className="butt_ios">
-            <a href="http://onelink.to/wgx597">
+            <div onClick={openApple}>
               <img
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/iOS-CTA_2x_felwyr_lqv0dy.png"
                 alt="App store download"
                 style={{ maxHeight: "45px", marginRight: "10px" }}
               />
-            </a>
+            </div>
           </div>
           <div className="butt_google">
-            <a href="http://onelink.to/wgx597">
+            <div onClick={openAndroid}>
               <img
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Google-CTA_2x_iayzfn_x0u7up.png"
                 alt="Google play download"
                 style={{ maxHeight: "45px" }}
               />
-            </a>
+            </div>
           </div>
         </div>
       </div>
       <div className="second" style={{ marginTop: "10%" }}>
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617699862/payqin/website/2_fissyp_mobile_tlnvbb.png"
+          src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280734/main%20website/Products/2_fissyp_przioy.png"
           alt=""
           height="220"
         />

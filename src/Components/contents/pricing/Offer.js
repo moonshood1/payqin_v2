@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const Offer = () => {
+const Offer = ({ showModal, setShowModal }) => {
   const { t, i18n } = useTranslation("common");
   const buttonVariant = {
     hover: {
@@ -12,6 +12,9 @@ const Offer = () => {
         repeatType: "reverse",
       },
     },
+  };
+  const handleClick = () => {
+    setShowModal(true);
   };
   return (
     <div className="pricing_wrapper">
@@ -44,7 +47,7 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">
+            <button className="offer_button" onClick={handleClick}>
               {t("pricing.offer.left.button")}
             </button>
           </motion.div>
@@ -80,7 +83,7 @@ const Offer = () => {
             whileHover="hover"
             className="offer_button_container"
           >
-            <button className="offer_button">
+            <button className="offer_button" onClick={handleClick}>
               {t("pricing.offer.left.button")}
             </button>
           </motion.div>

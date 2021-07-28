@@ -7,14 +7,25 @@ import MWordpress from "./dev/M_Wordpress";
 import MobileFooter from "./MobileFooter";
 
 const MobileDev = () => {
+  const handleClick = () => {
+    window.open("http://onelink.to/wgx597");
+  };
+  const openAndroid = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US"
+    );
+  };
+  const openApple = () => {
+    window.open("https://apps.apple.com/fr/app/payqin/id1397872810");
+  };
   return (
     <div className="mobile_dev_wrapper">
       <Carousel autoPlay={false} axis="vertical">
         <div style={{ height: "700px" }}>
-          <MPayment />
+          <MPayment openAndroid={openAndroid} openApple={openApple} />
         </div>
         <div style={{ height: "700px" }}>
-          <MSales />
+          <MSales openAndroid={openAndroid} openApple={openApple} />
         </div>
         <div style={{ height: "700px" }}>
           <MIntegration />

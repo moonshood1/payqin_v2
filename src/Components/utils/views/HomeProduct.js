@@ -8,7 +8,7 @@ import DataStructure from "../DataStructure";
 import ReactFullpage from "@fullpage/react-fullpage";
 import MobileProduct from "../../contents/mobile_version/MobileProduct";
 
-const HomeProduct = () => {
+const HomeProduct = ({ showModal, setShowModal }) => {
   return (
     <div className="global_container">
       <div className="global_container_content">
@@ -28,13 +28,19 @@ const HomeProduct = () => {
                     <Physical />
                   </div>
                   <div className="section">
-                    <Transfer />
+                    <Transfer
+                      showModal={showModal}
+                      setShowModal={setShowModal}
+                    />
                   </div>
                   <div className="section">
                     <Crypto />
                   </div>
                   <div className="section">
-                    <CryptoDoc />
+                    <CryptoDoc
+                      showModal={showModal}
+                      setShowModal={setShowModal}
+                    />
                   </div>
                 </ReactFullpage.Wrapper>
               );

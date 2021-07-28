@@ -4,6 +4,9 @@ const MOfferBasic = ({ handleClick }) => {
   return (
     <div className="creation_container_mobile" style={{ height: "100%" }}>
       <div className="mobile_offer_basic">
+        <small style={{ color: "gray", paddingLeft: "1%" }}>
+          <b>{t("pricing.offer.left.amount")}</b>
+        </small>
         <h1 style={{ fontSize: "26px", paddingTop: "10%", paddingLeft: "7%" }}>
           {t("pricing.offer.left.type")}
         </h1>

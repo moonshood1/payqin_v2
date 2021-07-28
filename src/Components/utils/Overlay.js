@@ -51,23 +51,23 @@ const Overlay = ({ showOverlay, setShowOverlay }) => {
               <button onClick={closeOverlay}>X</button>
             </div>
             <div className="overlay_content">
-              <p>
+              <p style={{ marginTop: "5%" }}>
                 <Link to="/products" onClick={closeOverlay}>
                   {t("overlay.prod")}
                 </Link>
               </p>
-              <p>
+              <p style={{ marginTop: "5%" }}>
                 <Link to="/developpers" onClick={closeOverlay}>
                   {t("overlay.dev")}
                 </Link>
               </p>
-              <p>
+              <p style={{ marginTop: "5%" }}>
                 <Link to="/pricing" onClick={closeOverlay}>
                   {t("overlay.price")}
                 </Link>
               </p>
             </div>
-            <div className="overlay_button">
+            <div className="overlay_button" style={{ marginTop: "15%" }}>
               <button onClick={handleClick}>{t("overlay.button")}</button>
             </div>
           </motion.div>

@@ -13,7 +13,7 @@ const Sales = () => {
             <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
                 whileHover={{ scale: 1.06 }}
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/iOS-CTA_2x_felwyr_lqv0dy.png"
                 alt="App store download"
                 className="ios"
               />
@@ -23,7 +23,7 @@ const Sales = () => {
             <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
               <motion.img
                 whileHover={{ scale: 1.06 }}
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Google-CTA_2x_iayzfn_x0u7up.png"
                 alt="Play Store download"
                 className="google"
               />
@@ -36,7 +36,7 @@ const Sales = () => {
         style={{ marginTop: "50px", marginLeft: "50px" }}
       >
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978216/payqin/website/track-sales_vngpvr.png"
+          src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280732/main%20website/Devs/track-sales_vngpvr_os03zc.png"
           alt="phone with parameters"
           height="400"
         />

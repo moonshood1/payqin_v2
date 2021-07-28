@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const CryptoDoc = () => {
+const CryptoDoc = ({ showModal, setShowModal }) => {
   const { t, i18n } = useTranslation("common");
   const buttonVariant = {
     hover: {
@@ -13,6 +13,9 @@ const CryptoDoc = () => {
       },
     },
   };
+  const handleClick = () => {
+    setShowModal(true);
+  };
   return (
     <div className="crypto_doc_wrapper">
       <div className="crypto_doc_first_section">
@@ -23,7 +26,7 @@ const CryptoDoc = () => {
           whileHover="hover"
           className="button_container"
         >
-          <button className="crypto_doc_link_create">
+          <button className="crypto_doc_link_create" onClick={handleClick}>
             {t("product.cryptoDoc.button")}
           </button>
         </motion.div>
@@ -36,7 +39,7 @@ const CryptoDoc = () => {
           >
             <motion.img
               whileHover={{ scale: 1.06 }}
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
+              src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/iOS-CTA_2x_felwyr_lqv0dy.png"
               alt="app store"
               className="ios"
             />
@@ -44,13 +47,12 @@ const CryptoDoc = () => {
           <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
             <motion.img
               whileHover={{ scale: 1.06 }}
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
+              src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Google-CTA_2x_iayzfn_x0u7up.png"
               alt="google play"
               className="google"
             />
           </a>
         </div>
-        {/* <div className="crypto_doc_buttons_google"></div> */}
       </div>
     </div>
   );

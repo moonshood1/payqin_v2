@@ -12,26 +12,46 @@ const MobileProduct = () => {
   const handleClick = () => {
     window.open("http://onelink.to/wgx597");
   };
+  const openAndroid = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US"
+    );
+  };
+  const openApple = () => {
+    window.open("https://apps.apple.com/fr/app/payqin/id1397872810");
+  };
   return (
     <div className="mobile_product_wrapper">
       <Carousel axis="vertical" autoPlay={false}>
         <div style={{ height: "700px" }}>
-          <MNotABank />
+          <MNotABank openAndroid={openAndroid} openApple={openApple} />
         </div>
         <div style={{ height: "700px" }}>
-          <MPhysical />
+          <MPhysical openAndroid={openAndroid} openApple={openApple} />
         </div>
         <div style={{ height: "700px" }}>
-          <MTransfer handleClick={handleClick} />
+          <MTransfer
+            handleClick={handleClick}
+            openAndroid={openAndroid}
+            openApple={openApple}
+          />
         </div>
         <div style={{ height: "700px" }}>
-          <MTransferSecond handleClick={handleClick} />
+          <MTransferSecond
+            handleClick={handleClick}
+            openAndroid={openAndroid}
+            openApple={openApple}
+          />
         </div>
         <div style={{ height: "700px" }}>
-          <MCrypto />
+          <MCrypto openAndroid={openAndroid} openApple={openApple} />
         </div>
         <div style={{ height: "700px" }}>
-          <MCryptoDoc handleClick={handleClick} />
+          <MCryptoDoc
+            handleClick={handleClick}
+            openAndroid={openAndroid}
+            openApple={openApple}
+          />
         </div>
       </Carousel>
       <MobileFooter />

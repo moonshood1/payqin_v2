@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const Transfer = () => {
+const Transfer = ({ showModal, setShowModal }) => {
   const { t, i18n } = useTranslation("common");
   const buttonVariant = {
     hover: {
@@ -11,13 +11,16 @@ const Transfer = () => {
       },
     },
   };
+  const handleClick = () => {
+    setShowModal(true);
+  };
   return (
     <div className="transfer_wrapper">
       <div className="transfer_wrapper_left">
         <div className="transfer_wrapper_left_first_section">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617880269/payqin/website/__1_OtIHOOxlUMHYsSWje1TmEQ_u3migr.jpg"
-            alt="Boah Paid Amalaman"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Products/__1_OtIHOOxlUMHYsSWje1TmEQ_u3migr_r3fdbu.jpg"
+            alt="two people on phone"
           />
         </div>
         <div
@@ -33,7 +36,10 @@ const Transfer = () => {
             whileHover="hover"
             className="transfer_button"
           >
-            <button className="transfer_button_learn_more">
+            <button
+              className="transfer_button_learn_more"
+              onClick={handleClick}
+            >
               {t("product.transfer.button")}
             </button>
           </motion.div>
@@ -48,15 +54,18 @@ const Transfer = () => {
             whileHover="hover"
             className="transfer_button"
           >
-            <button className="transfer_button_learn_more">
+            <button
+              className="transfer_button_learn_more"
+              onClick={handleClick}
+            >
               {t("product.transfer.button")}
             </button>
           </motion.div>
         </div>
         <div className="transfer_wrapper_right_second_section">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617892739/payqin/website/shutterstock_1884302866_gdhme9.jpg"
-            alt="two communicates"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280729/main%20website/Products/shutterstock_1884302866_gdhme9_imcp2f.jpg"
+            alt="two communicates on payment"
           />
         </div>
       </div>

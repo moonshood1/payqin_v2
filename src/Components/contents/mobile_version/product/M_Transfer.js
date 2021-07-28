@@ -16,7 +16,7 @@ const MTransfer = ({ handleClick }) => {
         </div>
         <div className="img" style={{ marginTop: "15%" }}>
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1617892739/payqin/website/shutterstock_1884302866_gdhme9.jpg"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280729/main%20website/Products/shutterstock_1884302866_gdhme9_imcp2f.jpg"
             alt=""
             height="220"
             style={{ boxShadow: "0px 6px 5px #000000af" }}

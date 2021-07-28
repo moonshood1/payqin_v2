@@ -1,6 +1,6 @@
 {
-  "homepage": "http://moonshood1.github.io/payqin_v2",
-  "name": "app_with_hooks",
+  "homepage": "https://payqin.com",
+  "name": "payqin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

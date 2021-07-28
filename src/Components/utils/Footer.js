@@ -6,14 +6,15 @@ const Footer = () => {
       <div className="footer_first_section">
         <div className="footer_logo">
           <img
-            src="https://www.payqin.com/wp-content/uploads/2020/09/n3-1.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280733/main%20website/n3-1_vscqvt_ljdred.png"
             alt="PayQin Logo"
           />
         </div>
         <div className="footer_links">
           <a href="/about">{t("footer.about")}</a>
-          <a href="/help">{t("footer.help")}</a>
-          <a href="https://assurance.payqin.com">{t("footer.insurance")}</a>
+          <a href="https://payqin.crisp.help/fr/">{t("footer.help")}</a>
+          <a href="https://blog.payqin.com">blog</a>
+          {/* <a href="https://assurance.payqin.com">{t("footer.insurance")}</a> */}
           <a href="https://ambassadeur.payqin.com">{t("footer.ambassador")}</a>
           <a href="/legal">{t("footer.legal")}</a>
         </div>
@@ -27,11 +28,6 @@ const Footer = () => {
           <a href="https://www.instagram.com/payqin/">
             <i className="fab fa-instagram"></i>
           </a>
-          <div className="footer_contact">
-            <button className="footer_contact_button">
-              {t("footer.button")}
-            </button>
-          </div>
         </div>
       </div>
       <div className="footer_second_section">

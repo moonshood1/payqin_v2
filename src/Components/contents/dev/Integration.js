@@ -37,7 +37,7 @@ const Payment = () => {
         style={{ marginTop: "50px" }}
       >
         <img
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978215/payqin/website/API-Illustration_kqv6dk.png"
+          src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280728/main%20website/Devs/API-Illustration_kqv6dk_qyqoqy.png"
           alt=" two talking about api"
           height="400"
           className="img_resp"

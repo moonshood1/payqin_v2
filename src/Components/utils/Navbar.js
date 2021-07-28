@@ -27,7 +27,7 @@ const Navbar = ({
       <div className="navbar_logo">
         <Link to="/">
           <img
-            src="https://www.payqin.com/wp-content/uploads/2020/09/n3-1.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280733/main%20website/n3-1_vscqvt_ljdred.png"
             alt="PayQin Logo"
           />
         </Link>
@@ -36,7 +36,7 @@ const Navbar = ({
         <NavLink
           activeClassName="is_active"
           to="/products"
-          onClick={handleHover}
+          /*onClick={handleHover}*/
         >
           {t("navbar.prod")}
           <span style={{ marginLeft: "6px" }}>

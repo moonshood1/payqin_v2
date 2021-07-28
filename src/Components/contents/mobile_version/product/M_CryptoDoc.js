@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-const MCryptoDoc = ({ handleClick }) => {
+const MCryptoDoc = ({ handleClick, openAndroid, openApple }) => {
   const { t, i18n } = useTranslation("common");
   return (
     <div className="crypto_doc">
@@ -15,22 +15,32 @@ const MCryptoDoc = ({ handleClick }) => {
         </div>
       </div>
       <div className="second" style={{ marginTop: "10%" }}>
-        <div className="crypto_doc_links">
-          <a href="http://onelink.to/wgx597">
+        <div
+          className="crypto_doc_links"
+          style={{
+            display: "flex",
+          }}
+        >
+          <div
+            onClick={openApple}
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
             <img
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_kveok0.png"
+              src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/iOS-CTA_2x_felwyr_lqv0dy.png"
               alt=""
               height="45px"
-              style={{ marginRight: "8px" }}
             />
-          </a>
-          <a href="http://onelink.to/wgx597">
+          </div>
+          <div
+            onClick={openAndroid}
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+          >
             <img
-              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/Google-CTA_dcj7d0.png"
+              src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Google-CTA_2x_iayzfn_x0u7up.png"
               alt=""
               height="45px"
             />
-          </a>
+          </div>
         </div>
       </div>
     </div>

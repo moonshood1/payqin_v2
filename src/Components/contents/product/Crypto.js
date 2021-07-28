@@ -13,7 +13,7 @@ const Crypto = () => {
             <a href="https://apps.apple.com/fr/app/payqin/id1397872810">
               <motion.img
                 whileHover={{ scale: 1.06 }}
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/iOS-CTA_2x_felwyr.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280731/main%20website/iOS-CTA_2x_felwyr_lqv0dy.png"
                 alt="App store download"
                 className="ios"
               />
@@ -23,7 +23,7 @@ const Crypto = () => {
             <a href="https://play.google.com/store/apps/details?id=com.payqin&hl=fr&gl=US">
               <motion.img
                 whileHover={{ scale: 1.06 }}
-                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978186/payqin/website/Google-CTA_2x_iayzfn.png"
+                src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Google-CTA_2x_iayzfn_x0u7up.png"
                 alt="Play Store download"
                 className="google"
               />
@@ -33,8 +33,7 @@ const Crypto = () => {
       </div>
       <div className="product_wrapper_right">
         <img
-          /*src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978185/payqin/website/buy-sell-crypto_2x_dvaeaf.png"*/
-          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1616431141/payqin/website/1_ipfubb.png"
+          src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280725/main%20website/Products/1_ipfubb_xbp5ny.png"
           alt="Crypto image"
         />
       </div>

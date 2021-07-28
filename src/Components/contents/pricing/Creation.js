@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const Creation = () => {
+const Creation = ({ showModal, setShowModal }) => {
   const { t, i18n } = useTranslation("common");
   const wrapperVariant = {
     hidden: {
@@ -25,6 +25,9 @@ const Creation = () => {
       },
     },
   };
+  const handleClick = () => {
+    setShowModal(true);
+  };
   return (
     <motion.div
       variants={wrapperVariant}
@@ -43,14 +46,14 @@ const Creation = () => {
             whileHover="hover"
             className="pricing_button_get_now"
           >
-            <button className="get_now_button">
+            <button className="get_now_button" onClick={handleClick}>
               {t("pricing.creation.button")}
             </button>
           </motion.div>
         </div>
         <div className="pricing_content_right">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1619015827/payqin/website/payQin-card-illustration_kl22uo.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280733/main%20website/pricing/payQin-card-illustration_kl22uo_g8zlsq.png"
             alt=" a payqin card"
             width="400"
           />

@@ -14,7 +14,7 @@ const MobileNavbar = ({ showOverlay, setShowOverlay, TraductionLinks }) => {
       <div className="mobile_navbar_logo">
         <Link to="/m">
           <img
-            src="https://www.payqin.com/wp-content/uploads/2020/09/n3-1.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626280733/main%20website/n3-1_vscqvt_ljdred.png"
             alt="PayQin Logo"
             className="mobile_logo"
           />

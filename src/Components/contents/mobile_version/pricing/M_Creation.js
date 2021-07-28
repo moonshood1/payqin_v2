@@ -34,13 +34,10 @@ const Mcreation = ({ handleClick }) => {
         </div>
         <div className="card_first">
           <img
-            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1615978215/payqin/website/payqin-cc-mockup_maeiax.png"
+            src="https://res.cloudinary.com/payqin-ltd/image/upload/v1626352964/main%20website/payqin-cc-mockup_maeiax_gokljq.png"
             alt=""
             height="190"
           />
-          <p style={{ marginTop: "4%" }}>
-            <b>{t("pricing.creation.price")} : 10 000 XOF</b>
-          </p>
         </div>
         <div className="get_now_button">
           <button onClick={handleClick}>{t("pricing.creation.button")}</button>

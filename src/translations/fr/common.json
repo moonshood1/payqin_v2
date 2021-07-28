@@ -55,8 +55,8 @@
     },
     "offer": {
       "left": {
-        "amount": "0 XOF / Mois",
-        "type": "Sans Engagement",
+        "amount": "0 XOF / Mois - Prix de la carte : 5 000 XOF",
+        "type": "Standard",
         "text1": "5 dollars offerts avec la carte",
         "text2": "Transferts à l'international sans frais",
         "text3": "Rechargement et Retrait sur carte sans frais",
@@ -65,8 +65,8 @@
         "button": "Ouvrir un compte"
       },
       "right": {
-        "amount": "2000 XOF/ Mois - 1er Mois gratuit",
-        "type": "Avec Abonnement",
+        "amount": "2000 XOF/ Mois - 1er Mois gratuit - Cartes Virtuelles gratuites",
+        "type": "Premium",
         "text1": "2 Cartes virtuelles gratuites",
         "text2": "Transferts à l'international sans frais",
         "text3": "Rechargement et Retrait sur carte sans frais",
