@@ -65,9 +65,9 @@
         "button": "Ouvrir un compte"
       },
       "right": {
-        "amount": "2000 XOF/ Mois - 1er Mois gratuit - Cartes Virtuelles gratuites",
+        "amount": "2000 XOF/ Mois - 1er Mois gratuit -Une Carte Virtuelle gratuite",
         "type": "Premium",
-        "text1": "2 Cartes virtuelles gratuites",
+        "text1": "1 Carte virtuelle gratuite",
         "text2": "Transferts à l'international sans frais",
         "text3": "Rechargement et Retrait sur carte sans frais",
         "text4": "Transactions sur carte sans frais",
@@ -79,7 +79,7 @@
   },
   "navbar": {
     "prod": "Produits",
-    "dev": "Developpeurs",
+    "dev": "Business",
     "price": "Tarification",
     "button": "Ouvrir un compte"
   },

@@ -65,9 +65,9 @@
         "button": "Open Account"
       },
       "right": {
-        "amount": "2000 XOF /month - 1st Month Free - Free virtuals cards",
+        "amount": "2000 XOF /month - 1st Month Free - A Free virtual card",
         "type": "Premium",
-        "text1": "2 free virtual cards",
+        "text1": "A free virtual card",
         "text2": "Free international transfers",
         "text3": "No fees for reloading and withdrawing from the card",
         "text4": "Free card transactions",
@@ -79,7 +79,7 @@
   },
   "navbar": {
     "prod": "Products",
-    "dev": "Developpers",
+    "dev": "Business",
     "price": "Pricing",
     "button": "Create Account"
   },
